@@ -25,8 +25,13 @@ class ArticleAdmin(admin.ModelAdmin):
             '/static/js/kindeditor-4.1.10/lang/zh_CN.js',
             '/static/js/kindeditor-4.1.10/config.js',
         )
-
-admin.site.register(User)
+class UserAdmin(admin.ModelAdmin):
+    fieldsets = (
+        (None, {
+            'fields': ('username','password', 'first_name', 'last_name', 'email', 'mobile', 'qq', 'avatar', 'is_staff', 'is_active')
+        }),
+    )
+admin.site.register(User, UserAdmin)
 admin.site.register(Tag)
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(Category)
