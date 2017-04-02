@@ -1,4 +1,4 @@
-/*µ¼º½µ±Ç°Ò³¸ßÁÁ*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°Ò³ï¿½ï¿½ï¿½ï¿½*/
 
 var obj=null;
 var As=document.getElementById('topnav').getElementsByTagName('a');

@@ -13,6 +13,7 @@ class User(AbstractUser):
     qq = models.CharField(max_length=20, blank=True, null=True, verbose_name='QQ号码')
     mobile = models.CharField(max_length=11, blank=True, null=True, unique=True, verbose_name='手机号码')
     url = models.URLField(max_length=100, blank=True, null=True, verbose_name='个人网页地址')
+    desc = models.CharField(max_length=100, blank=True, null=True, default="主人太懒啦，还没有描述哦", verbose_name='个人描述')
 
     class Meta:
         verbose_name = '用户'
@@ -36,7 +37,7 @@ class Tag(models.Model):
 # 分类
 class Category(models.Model):
     name = models.CharField(max_length=30, verbose_name='分类名称')
-    index = models.IntegerField(default=999,verbose_name='分类的排序')
+    index = models.IntegerField(default=999, verbose_name='分类的排序')
 
     class Meta:
         verbose_name = '分类'

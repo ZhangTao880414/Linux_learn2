@@ -3,9 +3,9 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>{{ SITE_NAME }}</title>
-<meta name="keywords" content="{{ SITE_NAME }}" />
-<meta name="description" content="{{ SITE_DESC }}" />
+<title>{{ request.user.username }}{{ SITE_NAME }}</title>
+<meta name="keywords" content="{{ request.user.username }}{{ SITE_NAME }}" />
+<meta name="description" content="{{ request.user.desc }}" />
 <link href="{% static 'css/base.css' %}" rel="stylesheet">
 <link href="{% static 'css/index.css' %}" rel="stylesheet">
 {% block custom_css %}{% endblock %}
@@ -19,8 +19,8 @@
 <body>
 <header>
   <div class="logo">
-      <h1>{{ SITE_NAME }}</h1>
-      <p>{{ SITE_DESC }}</p>
+      <h1>{{ request.user.username }}{{ SITE_NAME }}</h1>
+      <p>{{ request.user.desc }}</p>
   </div>
   <nav id="topnav" class="f_r">
     <ul>
@@ -28,6 +28,7 @@
       {% for category in category_list %}
       <a href="{% url 'category' %}?cid={{ category.id }}">{{ category.name }}</a>
       {% endfor %}
+       <a href="{% url 'login' %}">登录</a><a href="{% url 'reg' %}">注册</a><a href="{% url 'logout' %}">注销</a>
     </ul>
     <script src="{% static 'js/nav.js' %}"></script>
   </nav>
@@ -77,31 +78,28 @@ window.onload = function ()
         </ul>
       </div>
       <div class="ms-main" id="ms-main">
+      <!--浏览排行-->
         <div style="display: block;" class="bd bd-news" >
           <ul>
-            <li><a href="/" target="_blank">住在手机里的朋友</a></li>
-            <li><a href="/" target="_blank">教你怎样用欠费手机拨打电话</a></li>
-            <li><a href="/" target="_blank">原来以为，一个人的勇敢是，删掉他的手机号码...</a></li>
-            <li><a href="/" target="_blank">手机的16个惊人小秘密，据说99.999%的人都不知</a></li>
-            <li><a href="/" target="_blank">你面对的是生活而不是手机</a></li>
-            <li><a href="/" target="_blank">豪雅手机正式发布! 在法国全手工打造的奢侈品</a></li>
+              {% for article_click_count in article_click_count_list %}
+            <li><a href="{% url 'article' %}?id={{ article_click_count.id }}" target="_blank">{{ article_click_count.title }}</a></li>
+              {% endfor %}
           </ul>
         </div>
+      <!--评论排行-->
         <div  class="bd bd-news">
           <ul>
             {% for article in article_comment_list %}
-            <li><a href="/" target="_blank">{{ article.title | slice:':15' }}</a></li>
+            <li><a href="{% url 'article' %}?id={{ article.id }}" target="_blank">{{ article.title | slice:':15' }}</a></li>
             {% endfor %}
           </ul>
         </div>
+      <!--站长推荐 -->
         <div class="bd bd-news">
           <ul>
-            <li><a href="/" target="_blank">手机的16个惊人小秘密，据说99.999%的人都不知</a></li>
-            <li><a href="/" target="_blank">你面对的是生活而不是手机</a></li>
-            <li><a href="/" target="_blank">住在手机里的朋友</a></li>
-            <li><a href="/" target="_blank">豪雅手机正式发布! 在法国全手工打造的奢侈品</a></li>
-            <li><a href="/" target="_blank">教你怎样用欠费手机拨打电话</a></li>
-            <li><a href="/" target="_blank">原来以为，一个人的勇敢是，删掉他的手机号码...</a></li>
+              {% for article_is_recommend in article_is_recommend_list %}
+            <li><a href="{% url 'article' %}?id={{ article_is_recommend.id }}" target="_blank">{{ article_is_recommend.title }}</a></li>
+              {% endfor %}
           </ul>
         </div>
       </div>
@@ -112,20 +110,9 @@ window.onload = function ()
     <div class="cloud">
       <h3>标签云</h3>
       <ul>
-        <li><a href="/">个人博客</a></li>
-        <li><a href="/">web开发</a></li>
-        <li><a href="/">前端设计</a></li>
-        <li><a href="/">Html</a></li>
-        <li><a href="/">CSS3</a></li>
-        <li><a href="/">Html5+css3</a></li>
-        <li><a href="/">百度</a></li>
-        <li><a href="/">Javasript</a></li>
-        <li><a href="/">web开发</a></li>
-        <li><a href="/">前端设计</a></li>
-        <li><a href="/">Html</a></li>
-        <li><a href="/">CSS3</a></li>
-        <li><a href="/">Html5+css3</a></li>
-        <li><a href="/">百度</a></li>
+          {% for Tag in Tag_list %}
+        <li><a href="{% url 'category' %}?cid={{ Tag.id }}">{{ Tag.name }}</a></li>
+          {% endfor %}
       </ul>
     </div>
     <div class="tuwen">
@@ -141,12 +128,9 @@ window.onload = function ()
     <div class="links">
       <h3>友情链接</h3>
       <ul>
-        <li><a href="/">web开发</a></li>
-        <li><a href="/">前端设计</a></li>
-        <li><a href="/">Html</a></li>
-        <li><a href="/">CSS3</a></li>
-        <li><a href="/">Html5+css3</a></li>
-        <li><a href="/">百度</a></li>
+          {% for Links in Links_list %}
+        <li><a href="{{ Links.callback_url }}">{{ Links.title }}</a></li>
+          {% endfor %}
       </ul>
     </div>
   </div>

@@ -8,6 +8,8 @@ from django.contrib.auth.hashers import make_password
 from django.core.paginator import Paginator, InvalidPage, EmptyPage, PageNotAnInteger
 from django.db import connection
 from django.db.models import Count
+from django.contrib.auth import login
+from django.contrib.auth.models import User
 from models import *
 from forms import *
 import json
@@ -19,18 +21,26 @@ def global_setting(request):
     # 站点基本信息
     SITE_URL = settings.SITE_URL
     SITE_NAME = settings.SITE_NAME
-    SITE_DESC = settings.SITE_DESC
+    # SITE_DESC = settings.SITE_DESC
     # 分类信息获取（导航数据）
     category_list = Category.objects.all()[:6]
     # 文章归档数据
     archive_list = Article.objects.distinct_date()
-    # 广告数据（同学们自己完成）
-    # 标签云数据（同学们自己完成）
-    # 友情链接数据（同学们自己完成）
-    # 文章排行榜数据（按浏览量和站长推荐的功能同学们自己完成）
+    # 广告数据（待完成）
+    Ad_list = Ad.objects.all()
+    # 标签云数据（完成）
+    Tag_list = Tag.objects.all()
+    # 友情链接数据（完成）
+    Links_list = Links.objects.all()
+    # 文章排行榜数据（按浏览量待完成）
+    article_click_count_list = Article.objects.all().order_by('click_count')
+    # 文章排行榜数据按站长推荐的功能待完成）
+    article_is_recommend_list =Article.objects.all().order_by('-is_recommend')
     # 评论排行
     comment_count_list = Comment.objects.values('article').annotate(comment_count=Count('article')).order_by('-comment_count')
     article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
+    #返回当前用户信息
+    # user_ifo ='django.contrib.auth.backends.ModelBackend'
     return locals()
 
 def index(request):
@@ -62,6 +72,7 @@ def archive(request):
         # 先获取客户端提交的信息
         year = request.GET.get('year', None)
         month = request.GET.get('month', None)
+        # 制作模糊查询
         article_list = Article.objects.filter(date_publish__icontains=year+'-'+month)
         article_list = getPage(request, article_list)
     except Exception as e:
@@ -69,13 +80,13 @@ def archive(request):
     return render(request, 'archive.html', locals())
 
 # 按标签查询对应的文章列表
-def tag(request):
-    try:
-        # 同学们自己实现该功能
-        pass
-    except Exception as e:
-        logger.error(e)
-    return render(request, 'archive.html', locals())
+# def tag(request):
+#     try:
+#         # 同学们自己实现该功能
+#         pass
+#     except Exception as e:
+#         logger.error(e)
+#     return render(request, 'archive.html', locals())
 
 # 分页代码
 def getPage(request, article_list):
@@ -171,7 +182,7 @@ def do_reg(request):
             reg_form = RegForm()
     except Exception as e:
         logger.error(e)
-    return render(request, 'reg.html', locals())
+    return render(request, 'regdit.html', locals())
 
 # 登录
 def do_login(request):

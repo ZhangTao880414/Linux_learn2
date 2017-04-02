@@ -25,16 +25,37 @@ class ArticleAdmin(admin.ModelAdmin):
             '/static/js/kindeditor-4.1.10/lang/zh_CN.js',
             '/static/js/kindeditor-4.1.10/config.js',
         )
+
 class UserAdmin(admin.ModelAdmin):
     fieldsets = (
         (None, {
             'fields': ('username','password', 'first_name', 'last_name', 'email', 'mobile', 'qq', 'avatar', 'is_staff', 'is_active')
         }),
     )
+
+class CommentAdmin(admin.ModelAdmin):
+    fieldsets = (
+        (None, {
+            'fields': ('content', 'username', 'email', 'url', 'user', 'article',  'pid', )
+        }),
+    )
+    class Media:
+        js = (
+            '/static/js/kindeditor-4.1.10/kindeditor-min.js',
+            '/static/js/kindeditor-4.1.10/lang/zh_CN.js',
+            '/static/js/kindeditor-4.1.10/config.js',
+        )
+class CategoryAdmin(admin.ModelAdmin):
+    fieldsets = (
+        (None, {
+            'fields': ('name',)
+        }),
+    )
+
 admin.site.register(User, UserAdmin)
 admin.site.register(Tag)
 admin.site.register(Article, ArticleAdmin)
-admin.site.register(Category)
-admin.site.register(Comment)
+admin.site.register(Category, CategoryAdmin)
+admin.site.register(Comment, CommentAdmin)
 admin.site.register(Links)
 admin.site.register(Ad)
