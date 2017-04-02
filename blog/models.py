@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
@@ -51,9 +52,11 @@ class Category(models.Model):
 class ArticleManager(models.Manager):
     def distinct_date(self):
         distinct_date_list = []
+        # date_publish为modles中类的字段
         date_list = self.values('date_publish')
         for date in date_list:
-            date = date['date_publish'].strftime('%Y/%m文章存档')
+            #date为保存的指定格式
+            date = date['date_publish'].strftime('%Y/%m')
             if date not in distinct_date_list:
                 distinct_date_list.append(date)
         return distinct_date_list
