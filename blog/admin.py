@@ -29,7 +29,7 @@ class ArticleAdmin(admin.ModelAdmin):
 class UserAdmin(admin.ModelAdmin):
     fieldsets = (
         (None, {
-            'fields': ('username','password', 'first_name', 'last_name', 'email', 'mobile', 'qq', 'avatar', 'is_staff', 'is_active')
+            'fields': ('username','password', 'desc', 'first_name', 'last_name', 'email', 'url', 'mobile', 'qq', 'avatar', 'is_staff', 'is_active')
         }),
     )
 
