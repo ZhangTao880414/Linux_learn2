@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'blog',
     'BBS',
     'VideoHome',
+    'BOOK',
 )
 
 MIDDLEWARE_CLASSES = (

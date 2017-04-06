@@ -1408,3 +1408,568 @@ TemplateSyntaxError: Invalid block tag: 'static'
 2017-04-03 02:10:55,892 [Thread-2:13700] [django.request:170] [base:get_response] [WARNING]- Not Found: /
 2017-04-03 06:16:55,855 [Thread-2:2876] [django.request:170] [base:get_response] [WARNING]- Not Found: /
 2017-04-03 06:16:55,950 [Thread-3:1504] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-03 19:54:04,390 [Thread-20:10116] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-04 04:29:34,834 [Thread-20:18660] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-04 04:29:41,178 [Thread-21:5964] [django.request:170] [base:get_response] [WARNING]- Not Found: /home
+2017-04-04 04:29:45,900 [Thread-22:4180] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/home
+2017-04-04 04:30:05,009 [Thread-28:19592] [django.request:170] [base:get_response] [WARNING]- Not Found: /home
+2017-04-04 04:30:19,071 [Thread-3:15856] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /home/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 17, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'static'
+2017-04-04 04:31:28,234 [Thread-7:11804] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /home/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 17, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'static'
+2017-04-04 04:32:21,385 [Thread-2:15380] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /home/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\Linux_learn2\urls.py", line 28, in <module>
+    url(r'^home', include('VideoHome.urls')),
+  File "c:\python27\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\VideoHome\urls.py", line 3, in <module>
+    from VideoHome.views import *
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 18
+    return return HttpResponse("web")
+                ^
+SyntaxError: invalid syntax
+2017-04-04 04:32:22,581 [Thread-3:18308] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /home/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\Linux_learn2\urls.py", line 28, in <module>
+    url(r'^home', include('VideoHome.urls')),
+  File "c:\python27\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\VideoHome\urls.py", line 3, in <module>
+    from VideoHome.views import *
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 18
+    return return HttpResponse("web")
+                ^
+SyntaxError: invalid syntax
+2017-04-04 04:32:24,073 [Thread-4:18996] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /home/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\Linux_learn2\urls.py", line 28, in <module>
+    url(r'^home', include('VideoHome.urls')),
+  File "c:\python27\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\VideoHome\urls.py", line 3, in <module>
+    from VideoHome.views import *
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 18
+    return return HttpResponse("web")
+                ^
+SyntaxError: invalid syntax
+2017-04-04 04:33:06,756 [Thread-2:19432] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /home/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 18, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'static'
+2017-04-04 04:33:26,099 [Thread-5:3000] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /home/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 18, in videohome
+    return render(request, 'base.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'static'
+2017-04-04 04:33:49,302 [Thread-2:16624] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /home/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 18, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'static'
+2017-04-04 04:35:12,755 [Thread-6:20312] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /home/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 18, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'static'
+2017-04-04 04:35:15,835 [Thread-7:19500] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /home/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 18, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'static'
+2017-04-04 04:36:54,976 [Thread-14:20204] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/img/linux.png
+2017-04-04 04:36:54,996 [Thread-15:11096] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/img/Python.png
+2017-04-04 04:36:55,025 [Thread-16:4972] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/img/HTML.png
+2017-04-04 04:36:55,063 [Thread-18:19464] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/img/default (1).jpg
+2017-04-04 04:36:55,065 [Thread-19:19764] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/img/default.jpg
+2017-04-04 04:36:55,066 [Thread-20:10780] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/img/sports.jpg
+2017-04-04 04:41:17,677 [Thread-21:14836] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /home/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 18, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'static"imgHome/linux.png"'
+2017-04-04 04:41:35,032 [Thread-30:13012] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/img/default (1).jpg
+2017-04-04 04:41:35,036 [Thread-31:18348] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/img/default.jpg
+2017-04-04 04:41:35,051 [Thread-32:17948] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/img/sports.jpg
+2017-04-04 04:42:29,924 [Thread-35:18120] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/img/default.jpg
+2017-04-04 04:42:29,946 [Thread-36:14204] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/img/sports.jpg
+2017-04-04 04:42:30,045 [Thread-37:3012] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/img/default.jpg
+2017-04-04 04:42:30,052 [Thread-38:5052] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/img/sports.jpg
+2017-04-04 16:17:17,461 [Thread-20:14364] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-04 16:17:22,555 [Thread-21:10900] [django.request:170] [base:get_response] [WARNING]- Not Found: /hoime
+2017-04-04 16:18:02,611 [Thread-4:15192] [django.request:170] [base:get_response] [WARNING]- Not Found: /home/
+2017-04-04 16:18:03,786 [Thread-5:14172] [django.request:170] [base:get_response] [WARNING]- Not Found: /
+2017-04-04 16:18:08,302 [Thread-6:15144] [django.request:170] [base:get_response] [WARNING]- Not Found: /
+2017-04-04 16:19:12,107 [Thread-9:11416] [django.request:170] [base:get_response] [WARNING]- Not Found: /cat
+2017-04-05 18:06:20,553 [Thread-13:12984] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-05 18:15:15,875 [Thread-66:13836] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 18, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 579, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 496, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'blog' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-04-05 18:15:26,062 [Thread-72:13944] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 18, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 579, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 496, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'blog' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-04-05 18:16:33,411 [Thread-76:13852] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 18, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 579, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 496, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'blog' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-04-05 18:16:35,308 [Thread-77:13848] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 18, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 579, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 496, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'blog' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-04-05 18:18:08,168 [Thread-101:13624] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 18, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 579, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 496, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'blog' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-04-05 18:35:21,933 [Thread-129:13624] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/about
+2017-04-05 18:58:13,994 [Thread-44:18720] [django.request:98] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /bloglogin
+2017-04-05 18:58:16,780 [Thread-45:16148] [django.request:98] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /bloglogin
+2017-04-05 18:59:12,618 [Thread-2:19592] [django.request:170] [base:get_response] [WARNING]- Not Found: /blogcategory/
+2017-04-06 04:20:09,463 [Thread-3:29460] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-06 04:31:44,039 [Thread-5:31340] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/css/libs/bootstrap.min.css
+2017-04-06 04:31:44,043 [Thread-6:31348] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/javascript/libs/jquery-3.1.0.min.js
+2017-04-06 04:31:44,049 [Thread-7:31352] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/javascript/libs/bootstrap.min.js
+2017-04-06 04:31:54,703 [Thread-11:31508] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/css/libs/bootstrap.min.css
+2017-04-06 04:31:54,706 [Thread-12:31512] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/javascript/libs/jquery-3.1.0.min.js
+2017-04-06 04:31:54,706 [Thread-13:31516] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/javascript/libs/bootstrap.min.js
+2017-04-06 05:16:39,523 [Thread-5:34652] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/BOOK/book_info/add/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (book_date_publish) specified for book_info. Check fields/fieldsets/exclude attributes of class book_infoAdmin.
+2017-04-06 05:17:11,407 [Thread-21:30956] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/BOOK/book_info/add/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (book_date_publish) specified for book_info. Check fields/fieldsets/exclude attributes of class book_infoAdmin.
+2017-04-06 05:26:14,848 [Thread-8:34428] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/book
+2017-04-06 18:51:53,091 [Thread-13:11012] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-07 04:55:36,486 [Thread-13:9376] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-07 05:00:11,160 [Thread-94:6896] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/BOOK/chapter_article/add/undefineddefault/default.css/
+2017-04-07 05:00:12,109 [Thread-98:6824] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/BOOK/chapter_article/add/undefineddefault/default.css/
+2017-04-07 05:00:12,681 [Thread-102:5452] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/BOOK/chapter_article/add/undefineddefault/default.css/
+2017-04-07 05:01:17,835 [Thread-106:2852] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/BOOK/chapter_article/add/undefineddefault/default.css/
+2017-04-07 05:01:18,655 [Thread-110:7388] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/BOOK/chapter_article/add/undefineddefault/default.css/
+2017-04-07 05:01:19,440 [Thread-114:7548] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/BOOK/chapter_article/add/undefineddefault/default.css/
+2017-04-07 05:01:20,220 [Thread-118:916] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/BOOK/chapter_article/add/undefineddefault/default.css/

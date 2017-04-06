@@ -9,17 +9,17 @@
 <body>
 	<div class="main">
 		<div class="header" >
-			<h1>Login!</h1>
+			<h1>请登陆!</h1>
 		</div>
 		<p></p>
 			<form action="{% url 'login' %}" method="post">
                 {% csrf_token %}
 				<ul class="right-form">
-					<h2>Login:</h2>
-					<li><input type="text" name="username" placeholder="Username" required/></li>
-					<li><input type="password" name="password" placeholder="Password" required/></li>
+					<h2>登陆:</h2>
+					<li><input type="text" name="username" placeholder="username" required/></li>
+					<li><input type="password" name="password" placeholder="password" required/></li>
 					<input type="hidden" name="source_url" value="{{ request.META.HTTP_REFERER }}">
-                    <input type="submit" value="Login" >
+                    <input type="submit" value="登陆" >
 					<div class="clear"> </div>
 				</ul>
 				<div class="clear"> </div>

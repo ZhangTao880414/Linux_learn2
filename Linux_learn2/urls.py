@@ -24,6 +24,9 @@ urlpatterns = [
     url(r"^uploads/(?P<path>.*)$", "django.views.static.serve", {"document_root": settings.MEDIA_ROOT,}),
     url(r'^admin/upload/(?P<dir_name>[^/]+)$', upload_image, name='upload_image'),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^', include('VideoHome.urls')),
     url(r'^blog', include('blog.urls')),
-    # url(r'^', include('VideoHome.urls')),
+    url(r'^book', include('BOOK.urls')),
+
+
 ]
