@@ -5,7 +5,7 @@ from models import *
 class book_infoAdmin(admin.ModelAdmin):
     list_display = ('book_category', 'book_name', 'book_auth', 'book_desc', 'book_is_recommend',)
     list_display_links = ('book_category', 'book_name', 'book_auth',)
-    list_editable = ('book_is_recommend',)
+    list_editable = ('book_is_recommend', 'book_desc',)
     fieldsets = (
         (None, {
             'fields': ('book_name', 'book_desc','book_auth', 'book_is_recommend', 'book_category')
