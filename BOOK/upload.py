@@ -15,7 +15,7 @@ def upload_image(request, dir_name):
     # {"error": 0, "url": "图片地址"}
     ##################
     result = {"error": 1, "message": "上传出错"}
-    files = request.FILES.get("imgFile", None)
+    files = request.FILES.get("imgFile", None) #上传图片的浏览按键名称为imgFile
     if files:
         result =image_upload(files, dir_name)
     return HttpResponse(json.dumps(result), content_type="application/json")

@@ -13,9 +13,9 @@ class book_infoAdmin(admin.ModelAdmin):
     )
 
 class Chapter_ArticleAdmin(admin.ModelAdmin):
-    list_display = ('Chapter_book', 'chapter_title',  'chapter_is_recommend',)
+    list_display = ('Chapter_book',  'chapter_title', 'Chapter_level', 'chapter_is_recommend',)
     list_display_links = ('Chapter_book', 'chapter_title',)
-    list_editable = ('chapter_is_recommend',)
+    list_editable = ('Chapter_level', 'chapter_is_recommend',)
 
     class Media:
         js = (

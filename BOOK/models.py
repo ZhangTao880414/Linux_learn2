@@ -36,7 +36,8 @@ class book_info(models.Model):
 
 # 章节信息
 class Chapter_Article(models.Model):
-    Chapter_book=models.ForeignKey(book_info, blank=True, null=True, verbose_name='书名')
+    Chapter_level = models.IntegerField(max_length=10, verbose_name='级别', default='1')
+    Chapter_book = models.ForeignKey(book_info, blank=True, null=True, verbose_name='书名')
     chapter_title = models.CharField(max_length=50, verbose_name='章节标题')
     chapter_desc = models.CharField(max_length=120, verbose_name='章节简介')
     chapter_content = models.TextField(verbose_name='章节内容')
