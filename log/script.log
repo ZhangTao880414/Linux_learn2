@@ -1973,3 +1973,488 @@ FieldError: Unknown field(s) (book_date_publish) specified for book_info. Check 
 2017-04-07 05:01:18,655 [Thread-110:7388] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/BOOK/chapter_article/add/undefineddefault/default.css/
 2017-04-07 05:01:19,440 [Thread-114:7548] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/BOOK/chapter_article/add/undefineddefault/default.css/
 2017-04-07 05:01:20,220 [Thread-118:916] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/BOOK/chapter_article/add/undefineddefault/default.css/
+2017-04-07 06:51:42,588 [Thread-3:13704] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 33, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "c:\python27\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'enffor', expected 'empty' or 'endfor'
+2017-04-07 06:51:54,464 [Thread-5:2656] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 33, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "c:\python27\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'enfor', expected 'empty' or 'endfor'
+2017-04-07 06:52:59,046 [Thread-11:9668] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/about
+2017-04-07 22:34:39,539 [Thread-9:8272] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-07 22:42:58,505 [Thread-47:6960] [django.request:170] [base:get_response] [WARNING]- Not Found: /biook
+2017-04-08 00:23:23,903 [Thread-13:6508] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-08 01:40:44,430 [Thread-2:9492] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\Linux_learn2\urls.py", line 29, in <module>
+    url(r'^book', include('BOOK.urls')),
+  File "c:\python27\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\BOOK\urls.py", line 3, in <module>
+    from BOOK.views import *
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 34
+    except (InvalidPage, EmptyPage, PageNotAnInteger):
+         ^
+SyntaxError: invalid syntax
+2017-04-08 01:41:15,464 [Thread-5:3320] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\Linux_learn2\urls.py", line 29, in <module>
+    url(r'^book', include('BOOK.urls')),
+  File "c:\python27\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\BOOK\urls.py", line 3, in <module>
+    from BOOK.views import *
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 34
+    except (InvalidPage, EmptyPage, PageNotAnInteger):
+         ^
+SyntaxError: invalid syntax
+2017-04-08 01:41:18,223 [Thread-6:5668] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\Linux_learn2\urls.py", line 29, in <module>
+    url(r'^book', include('BOOK.urls')),
+  File "c:\python27\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\BOOK\urls.py", line 3, in <module>
+    from BOOK.views import *
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 34
+    except (InvalidPage, EmptyPage, PageNotAnInteger):
+         ^
+SyntaxError: invalid syntax
+2017-04-08 01:41:19,081 [Thread-7:2056] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\Linux_learn2\urls.py", line 29, in <module>
+    url(r'^book', include('BOOK.urls')),
+  File "c:\python27\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\BOOK\urls.py", line 3, in <module>
+    from BOOK.views import *
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 34
+    except (InvalidPage, EmptyPage, PageNotAnInteger):
+         ^
+SyntaxError: invalid syntax
+2017-04-08 01:41:19,937 [Thread-8:5624] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\Linux_learn2\urls.py", line 29, in <module>
+    url(r'^book', include('BOOK.urls')),
+  File "c:\python27\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\BOOK\urls.py", line 3, in <module>
+    from BOOK.views import *
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 34
+    except (InvalidPage, EmptyPage, PageNotAnInteger):
+         ^
+SyntaxError: invalid syntax
+2017-04-08 01:44:04,611 [Thread-2:7084] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\Linux_learn2\urls.py", line 29, in <module>
+    url(r'^book', include('BOOK.urls')),
+  File "c:\python27\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\BOOK\urls.py", line 3, in <module>
+    from BOOK.views import *
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 32
+    except (InvalidPage, EmptyPage, PageNotAnInteger):
+         ^
+SyntaxError: invalid syntax
+2017-04-08 01:44:07,923 [Thread-3:9284] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\Linux_learn2\urls.py", line 29, in <module>
+    url(r'^book', include('BOOK.urls')),
+  File "c:\python27\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\BOOK\urls.py", line 3, in <module>
+    from BOOK.views import *
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 32
+    except (InvalidPage, EmptyPage, PageNotAnInteger):
+         ^
+SyntaxError: invalid syntax
+2017-04-08 01:44:23,348 [Thread-5:9788] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\Linux_learn2\urls.py", line 29, in <module>
+    url(r'^book', include('BOOK.urls')),
+  File "c:\python27\lib\site-packages\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python27\Lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\workspaces\Linux_learn2\BOOK\urls.py", line 3, in <module>
+    from BOOK.views import *
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 32
+    except (InvalidPage, EmptyPage, PageNotAnInteger):
+         ^
+SyntaxError: invalid syntax
+2017-04-08 04:51:21,938 [Thread-64:12028] [django.request:170] [base:get_response] [WARNING]- Not Found: /blog】、
+2017-04-08 04:52:12,936 [Thread-90:13164] [django.request:170] [base:get_response] [WARNING]- Not Found: /blogarticle/portal.php
+2017-04-08 05:05:03,595 [Thread-13:11884] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 37, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 217, in render
+    nodelist.append(node.render(context))
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 579, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 496, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'book' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-04-08 05:05:05,868 [Thread-14:13108] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 37, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 217, in render
+    nodelist.append(node.render(context))
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 507, in render
+    six.reraise(*exc_info)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 493, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 579, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "c:\python27\lib\site-packages\django\core\urlresolvers.py", line 496, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns))
+NoReverseMatch: Reverse for 'book' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-04-08 05:07:10,674 [Thread-29:11728] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/about
+2017-04-08 05:07:27,983 [Thread-34:11460] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/about
+2017-04-08 06:07:31,648 [Thread-7:13924] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 42, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 161, in render
+    values = list(values)
+TypeError: 'book_info' object is not iterable
+2017-04-08 06:07:45,250 [Thread-9:10756] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 42, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 161, in render
+    values = list(values)
+TypeError: 'book_info' object is not iterable
+2017-04-08 06:07:47,918 [Thread-10:11948] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 42, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 161, in render
+    values = list(values)
+TypeError: 'book_info' object is not iterable
+2017-04-08 06:09:42,223 [Thread-4:13164] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 42, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 161, in render
+    values = list(values)
+TypeError: 'book_info' object is not iterable
+2017-04-08 06:09:45,687 [Thread-5:16116] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 42, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 161, in render
+    values = list(values)
+TypeError: 'book_info' object is not iterable
+2017-04-08 06:35:05,665 [Thread-20:16300] [django.request:170] [base:get_response] [WARNING]- Not Found: //chapter
+2017-04-08 06:35:05,915 [Thread-21:1936] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-08 06:35:40,236 [Thread-24:16564] [django.request:170] [base:get_response] [WARNING]- Not Found: //chapter
+2017-04-08 06:35:50,411 [Thread-25:16800] [django.request:170] [base:get_response] [WARNING]- Not Found: //chapter
+2017-04-08 06:35:53,459 [Thread-33:15740] [django.request:170] [base:get_response] [WARNING]- Not Found: //chapter
+2017-04-08 06:35:58,517 [Thread-32:16304] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/book/chapter
+2017-04-08 06:36:18,688 [Thread-41:16000] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:36:25,427 [Thread-43:15064] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:37:41,849 [Thread-2:12248] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:37:42,749 [Thread-3:11656] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:37:45,528 [Thread-4:16964] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:39:13,069 [Thread-2:15184] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:39:42,882 [Thread-4:16388] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:39:54,421 [Thread-7:13860] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:40:56,388 [Thread-4:13868] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:42:28,553 [Thread-4:17280] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:42:56,323 [Thread-5:17136] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:45:46,319 [Thread-4:15096] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:46:22,107 [Thread-7:16928] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:48:18,497 [Thread-4:15548] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:49:28,283 [Thread-3:18152] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:49:35,973 [Thread-4:18168] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:50:19,950 [Thread-6:17716] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:51:38,579 [Thread-9:16636] [django.request:170] [base:get_response] [WARNING]- Not Found: /book1
+2017-04-08 06:52:19,494 [Thread-2:16160] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:52:23,615 [Thread-5:17536] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:52:35,190 [Thread-7:17020] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:53:07,650 [Thread-11:15872] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:54:30,450 [Thread-2:17904] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:54:31,249 [Thread-3:15748] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:54:32,977 [Thread-4:18296] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:54:48,431 [Thread-6:17428] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:57:25,904 [Thread-3:18348] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:57:51,744 [Thread-2:17756] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:57:54,119 [Thread-3:16320] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:58:20,095 [Thread-2:17188] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 06:58:22,134 [Thread-3:12456] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-08 07:02:41,470 [Thread-4:3244] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter

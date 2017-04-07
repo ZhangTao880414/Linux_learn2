@@ -20,7 +20,7 @@ class Book_Category(models.Model):
 class book_info(models.Model):
     book_name = models.CharField(max_length=50, verbose_name='书名')
     book_auth = models.CharField(max_length=50, verbose_name='作者')
-    book_desc = models.CharField(max_length=120, verbose_name='书籍描述')
+    book_desc = models.CharField(max_length=300, verbose_name='书籍描述')
     book_is_recommend = models.BooleanField(default=False, verbose_name='是否推荐')
     book_date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
     book_category = models.ForeignKey(Book_Category, blank=True, null=True, verbose_name='分类')
@@ -36,10 +36,10 @@ class book_info(models.Model):
 
 # 章节信息
 class Chapter_Article(models.Model):
-    Chapter_level = models.IntegerField(max_length=10, verbose_name='级别', default='1')
+    Chapter_level = models.FloatField(max_length=10, verbose_name='级别', default='1')
     Chapter_book = models.ForeignKey(book_info, blank=True, null=True, verbose_name='书名')
     chapter_title = models.CharField(max_length=50, verbose_name='章节标题')
-    chapter_desc = models.CharField(max_length=120, verbose_name='章节简介')
+    chapter_desc = models.CharField(max_length=300, verbose_name='章节简介')
     chapter_content = models.TextField(verbose_name='章节内容')
     chapter_is_recommend = models.BooleanField(default=False, verbose_name='是否重点推荐')
     chapter_date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
