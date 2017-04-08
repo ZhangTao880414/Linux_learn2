@@ -50,6 +50,6 @@ class Chapter_Article(models.Model):
     class Meta:
         verbose_name = '章节内容'
         verbose_name_plural = verbose_name
-        ordering = ['-chapter_date_publish']
+        ordering = ['Chapter_book', 'Chapter_level']
     def __unicode__(self):
         return self.chapter_title

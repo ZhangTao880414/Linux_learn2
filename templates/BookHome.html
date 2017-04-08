@@ -73,14 +73,14 @@
 <nav class="navbar-inverse">
  <div class="container-fluid">
         <div class="row">
-            <div class="span2  col-xs-12 col-sm-3 col-md-2">
+            <div class="span2 col-md-2">
                 <ul class="nav nav-pills nav-stacked" style="">
 {#                  {% for book in  Chapter_Article_list %}#}
 {#                      <li ><a href="#" style="color:#07C6C6"><h4>{{ book.book_name }}</h4></a></li>#}
 {#                   {% endfor %}#}
-                    <h4 style="color:#07C6C0">书籍名称</h4>
-                    {% for Chapter_Article in Chapter_list %}
-                        <li><a href="chapter?cid={{ Chapter_Article.id }}" style="color:#07C6C6" >{{ Chapter_Article.chapter_title }}</a></li>
+                    <h4 style="color:#3370CC">书籍名称</h4>
+                    {% for Chapter in Chapter_list %}
+                        <li><a href="chapter?cid={{ Chapter.id }}" >{{ Chapter.chapter_title }}</a></li>
                     {% endfor %}
                 </ul>
             </div>

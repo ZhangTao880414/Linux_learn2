@@ -37,8 +37,8 @@ def get_book(request):
             # return render(request, 'failure.html', {'reason': '分类不存在'})
             pass
         Chapter_list = Chapter_Article.objects.filter(Chapter_book=book_name).order_by('Chapter_level')
-        # print Chapter_Article_list
-        Chapter_list = getPage(request, Chapter_list)
+        # print Chapter_list
+        # Chapter_list = getPage(request, Chapter_list)
     except Exception as e:
         pass
     return render(request, 'BookHome.html', locals())
