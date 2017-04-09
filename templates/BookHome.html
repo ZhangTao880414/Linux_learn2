@@ -48,7 +48,7 @@
                 <li><a href="/" id="home">主页</a></li>
 
                  {% for book in book_list %}
-                 <li><a href="?book_id={{ book.id }}" >{{ book.book_name }}</a></li>
+                 <li><a href="?book_id={{ book.id }}&&cid={{ 1 }}" >{{ book.book_name }}</a></li>
                  {% endfor%}
 
                 <li><a href="/other/about" id="about">关于本站</a></li>
@@ -79,20 +79,17 @@
 {#                      <li ><a href="#" style="color:#07C6C6"><h4>{{ book.book_name }}</h4></a></li>#}
 {#                   {% endfor %}#}
                     <h4 style="color:#3370CC">书籍名称</h4>
-                    {% for Chapter in Chapter_list %}
-                        <li><a href="chapter?cid={{ Chapter.id }}" >{{ Chapter.chapter_title }}</a></li>
+                    {% for Chapter in Chapter_Title_list %}
+                        <li><a href="?book_id={{ Chapter.Chapter_book.id }}&&cid={{ Chapter.id }}" >{{ Chapter.chapter_title }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
-            <div class="col-xs-12 col-sm-9 col-md-10">
-			     <h2 style="color:#07C6C6">章节名称 </h2>
-			     <p style="color:#07C6C6">
-                     {{ Chapter_content }}
-				     章节具体内容Donec id elit non mi porta gravida at eget metus.
-                     Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                     ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                     mollis euismod. Donec sed odio dui.
-                 </p>
+            <div class="col-xs-12 col-sm-9 col-md-10" style="color:#3370CC">
+			     <h2 style="color:#07C6C6">{{ Chapter_name }} </h2>
+{#			         <p style="color:#07C6C6">{{ Chapter_name.chapter_content }}</p>#}
+                {% autoescape off %}
+                {{ Chapter_name.chapter_content }}
+                {% endautoescape %}
                 <div>
                     <ul id="last" class=" ">
                         <li><a href="#" style="color:#07C6C6" >上一章</a></li>

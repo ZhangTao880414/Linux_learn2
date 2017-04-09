@@ -2485,3 +2485,47 @@ TypeError: 'book_info' object is not iterable
 2017-04-09 06:38:47,483 [Thread-4:16336] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
 2017-04-09 06:38:48,092 [Thread-5:15192] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
 2017-04-09 06:41:15,105 [Thread-16:14656] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/chapter
+2017-04-10 03:23:03,305 [Thread-13:12624] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-10 03:23:23,984 [Thread-14:12740] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/about
+2017-04-10 04:30:36,009 [Thread-100:5468] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /blogarticle/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\blog\views.py", line 129, in article
+    return render(request, 'article.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 89, in render
+    output = self.filter_expression.resolve(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 674, in resolve
+    new_obj = func(obj, *arg_vals)
+  File "F:\workspaces\Linux_learn2\blog\templatetags\myfilter.py", line 8, in month_to_upper
+    return ['涓€', '浜?, '涓?, '鍥?, '浜?, '鍏?, '涓?, '鍏?, '涔?, '鍗?, '鍗佷竴', '鍗佷簩'][key.month-1]
+AttributeError: 'str' object has no attribute 'month'
+2017-04-10 04:38:27,092 [Thread-120:12700] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/cid=1

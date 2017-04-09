@@ -29,16 +29,15 @@ def get_book(request):
     try:
         book_list = book_info.objects.all()
         book_id = request.GET.get('book_id', None)
-        # print cid
+        Chapter_id = request.GET.get('cid', None)
         try:
             book_name = book_info.objects.get(pk=book_id)
-            # print book
+            Chapter_name = Chapter_Article.objects.get(pk=Chapter_id)
         except book_info.DoesNotExist:
             # return render(request, 'failure.html', {'reason': '分类不存在'})
             pass
-        Chapter_list = Chapter_Article.objects.filter(Chapter_book=book_name).order_by('Chapter_level')
-        # print Chapter_list
-        # Chapter_list = getPage(request, Chapter_list)
+        Chapter_Title_list = Chapter_Article.objects.filter(Chapter_book=book_name).order_by('Chapter_level')
+        Chapter_desc = Chapter_Article.objects.filter(chapter_title=Chapter_name)
     except Exception as e:
         pass
     return render(request, 'BookHome.html', locals())
