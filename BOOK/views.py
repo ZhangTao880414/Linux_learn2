@@ -30,14 +30,20 @@ def get_book(request):
         book_list = book_info.objects.all()
         book_id = request.GET.get('book_id', None)
         Chapter_id = request.GET.get('cid', None)
+
+        # 设置文章默认展示书籍
+        if book_id is None:
+            book_id = 1
+        # 通过书籍id找到书籍第一页
+        if Chapter_id is None:
+            Chapter_id = Chapter_Article.objects.get(Chapter_book_id=book_id, Chapter_level=1).id
         try:
             book_name = book_info.objects.get(pk=book_id)
             Chapter_name = Chapter_Article.objects.get(pk=Chapter_id)
         except book_info.DoesNotExist:
-            # return render(request, 'failure.html', {'reason': '分类不存在'})
             pass
+
         Chapter_Title_list = Chapter_Article.objects.filter(Chapter_book=book_name).order_by('Chapter_level')
-        Chapter_desc = Chapter_Article.objects.filter(chapter_title=Chapter_name)
     except Exception as e:
         pass
     return render(request, 'BookHome.html', locals())

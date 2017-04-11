@@ -48,7 +48,7 @@
                 <li><a href="/" id="home">主页</a></li>
 
                  {% for book in book_list %}
-                 <li><a href="?book_id={{ book.id }}&&cid={{ 1 }}" >{{ book.book_name }}</a></li>
+                 <li><a href="?book_id={{ book.id }}" >{{ book.book_name }}</a></li>
                  {% endfor%}
 
                 <li><a href="/other/about" id="about">关于本站</a></li>
@@ -75,16 +75,15 @@
         <div class="row">
             <div class="span2 col-md-2">
                 <ul class="nav nav-pills nav-stacked" style="">
-{#                  {% for book in  Chapter_Article_list %}#}
-{#                      <li ><a href="#" style="color:#07C6C6"><h4>{{ book.book_name }}</h4></a></li>#}
-{#                   {% endfor %}#}
-                    <h4 style="color:#3370CC">书籍名称</h4>
+{#                添加左侧书籍名称及章节#}
+                    <h4 style="color:#3370CC">{{ book_name }}</h4>
                     {% for Chapter in Chapter_Title_list %}
                         <li><a href="?book_id={{ Chapter.Chapter_book.id }}&&cid={{ Chapter.id }}" >{{ Chapter.chapter_title }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
-            <div class="col-xs-12 col-sm-9 col-md-10" style="color:#3370CC">
+            {#                添加右侧书籍章节内容#}
+            <div class="col-xs-12 col-sm-9 col-md-10" style="color:cornflowerblue">
 			     <h2 style="color:#07C6C6">{{ Chapter_name }} </h2>
 {#			         <p style="color:#07C6C6">{{ Chapter_name.chapter_content }}</p>#}
                 {% autoescape off %}

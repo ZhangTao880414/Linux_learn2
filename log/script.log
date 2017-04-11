@@ -2529,3 +2529,7 @@ Traceback (most recent call last):
     return ['涓€', '浜?, '涓?, '鍥?, '浜?, '鍏?, '涓?, '鍏?, '涔?, '鍗?, '鍗佷竴', '鍗佷簩'][key.month-1]
 AttributeError: 'str' object has no attribute 'month'
 2017-04-10 04:38:27,092 [Thread-120:12700] [django.request:170] [base:get_response] [WARNING]- Not Found: /book/cid=1
+2017-04-10 05:49:52,954 [Thread-11:10244] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/about
+2017-04-10 06:25:13,240 [Thread-13:5508] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-10 18:34:12,667 [Thread-3:6816] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-12 02:28:19,102 [Thread-13:18404] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
