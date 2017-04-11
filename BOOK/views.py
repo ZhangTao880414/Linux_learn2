@@ -27,7 +27,7 @@ def get_chapter(request):
 
 def get_book(request):
     try:
-        book_list = book_info.objects.all()
+        book_list = book_info.objects.filter(book_display=1)
         book_id = request.GET.get('book_id', None)
         Chapter_id = request.GET.get('cid', None)
 

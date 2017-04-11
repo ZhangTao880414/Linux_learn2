@@ -24,12 +24,13 @@ class book_info(models.Model):
     book_is_recommend = models.BooleanField(default=False, verbose_name='是否推荐')
     book_date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
     book_category = models.ForeignKey(Book_Category, blank=True, null=True, verbose_name='分类')
+    book_display = models.BooleanField(default=1,verbose_name='是否发布')
     # objects = ArticleManager()
 
     class Meta:
         verbose_name = '书名'
         verbose_name_plural = verbose_name
-        ordering = ['-book_date_publish']
+        ordering = ['book_category', '-book_date_publish']
 
     def __unicode__(self):
         return self.book_name

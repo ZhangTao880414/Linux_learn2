@@ -3,9 +3,9 @@ from django.contrib import admin
 from models import *
 # Register your models here.
 class book_infoAdmin(admin.ModelAdmin):
-    list_display = ('book_category', 'book_name', 'book_auth', 'book_desc', 'book_is_recommend',)
+    list_display = ('book_category', 'book_name', 'book_auth', 'book_desc', 'book_is_recommend','book_display',)
     list_display_links = ('book_category', 'book_name', 'book_auth',)
-    list_editable = ('book_is_recommend', 'book_desc',)
+    list_editable = ('book_is_recommend', 'book_desc','book_display')
     fieldsets = (
         (None, {
             'fields': ('book_name', 'book_desc','book_auth', 'book_is_recommend', 'book_category')
