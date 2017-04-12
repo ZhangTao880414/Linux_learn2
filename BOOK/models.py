@@ -24,7 +24,7 @@ class book_info(models.Model):
     book_is_recommend = models.BooleanField(default=False, verbose_name='是否推荐')
     book_date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
     book_category = models.ForeignKey(Book_Category, blank=True, null=True, verbose_name='分类')
-    book_display = models.BooleanField(default=1,verbose_name='是否发布')
+    book_display = models.BooleanField(default=False, verbose_name='是否发布')
     # objects = ArticleManager()
 
     class Meta:
@@ -43,7 +43,9 @@ class Chapter_Article(models.Model):
     chapter_desc = models.CharField(max_length=300, verbose_name='章节简介')
     chapter_content = models.TextField(verbose_name='章节内容')
     chapter_is_recommend = models.BooleanField(default=False, verbose_name='是否重点推荐')
+    chapter_display = models.BooleanField(default=False, verbose_name='是否发布')
     chapter_date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
+
     # chapter_category = models.ForeignKey(Category, blank=True, null=True, verbose_name='分类')
     # chapter_tag = models.ManyToManyField(Tag, verbose_name='标签')
     # objects = ArticleManager()

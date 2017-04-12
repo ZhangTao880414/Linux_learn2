@@ -43,7 +43,7 @@ def get_book(request):
         except book_info.DoesNotExist:
             pass
 
-        Chapter_Title_list = Chapter_Article.objects.filter(Chapter_book=book_name).order_by('Chapter_level')
+        Chapter_Title_list = Chapter_Article.objects.filter(Chapter_book=book_name,chapter_display=1).order_by('Chapter_level')
     except Exception as e:
         pass
     return render(request, 'BookHome.html', locals())

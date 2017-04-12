@@ -2533,3 +2533,85 @@ AttributeError: 'str' object has no attribute 'month'
 2017-04-10 06:25:13,240 [Thread-13:5508] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
 2017-04-10 18:34:12,667 [Thread-3:6816] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
 2017-04-12 02:28:19,102 [Thread-13:18404] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-12 16:39:56,492 [Thread-13:8132] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-12 17:03:55,108 [Thread-28:8444] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/about
+2017-04-12 17:03:57,631 [Thread-29:3440] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/contact
+2017-04-12 20:01:41,434 [Thread-80:9756] [django.request:170] [base:get_response] [WARNING]- Not Found: /home
+2017-04-12 20:01:41,618 [Thread-81:9768] [django.request:170] [base:get_response] [WARNING]- Not Found: /home
+2017-04-12 20:01:49,470 [Thread-82:9548] [django.request:170] [base:get_response] [WARNING]- Not Found: /video
+2017-04-12 20:03:26,246 [Thread-92:12832] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/follow
+2017-04-12 20:03:29,065 [Thread-93:13036] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/follow
+2017-04-13 02:03:52,851 [Thread-13:19548] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-13 02:29:39,127 [Thread-10:20420] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/VideoHome/video_category/add/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "c:\python27\lib\site-packages\django\utils\encoding.py", line 92, in force_text
+    s = six.text_type(s)
+  File "F:\workspaces\Linux_learn2\VideoHome\models.py", line 17, in __unicode__
+    return self.Category_name
+AttributeError: 'Video_Category' object has no attribute 'Category_name'
+2017-04-13 02:29:46,424 [Thread-11:21588] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/VideoHome/video_category/add/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "c:\python27\lib\site-packages\django\utils\encoding.py", line 92, in force_text
+    s = six.text_type(s)
+  File "F:\workspaces\Linux_learn2\VideoHome\models.py", line 17, in __unicode__
+    return self.Category_name
+AttributeError: 'Video_Category' object has no attribute 'Category_name'
+2017-04-13 02:36:40,122 [Thread-76:22244] [django.request:170] [base:get_response] [WARNING]- Not Found: /video
+2017-04-13 02:36:41,986 [Thread-77:21556] [django.request:170] [base:get_response] [WARNING]- Not Found: /video
+2017-04-13 02:38:40,835 [Thread-109:21152] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/about
+2017-04-13 02:38:43,763 [Thread-110:22504] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/about
+2017-04-13 02:38:48,940 [Thread-111:17332] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/about
+2017-04-13 02:38:56,177 [Thread-115:21800] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/about
+2017-04-13 03:22:41,736 [Thread-8:26132] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/video/default.png
+2017-04-13 03:23:39,335 [Thread-5:25352] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/video/default.png
+2017-04-13 03:30:22,588 [Thread-30:3432] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/contact
+2017-04-13 03:37:59,385 [Thread-22:28196] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-13 03:38:11,770 [Thread-24:24408] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico

@@ -38,25 +38,14 @@
         <div class="collapse navbar-collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="/" id="home">主页</a></li>
-                <li><a href="/other/about" id="about">Linux</a></li>
-                <li><a href="/other/about" id="about">Python</a></li>
-                <li><a href="/other/about" id="about">JavaScript</a></li>
-                <li><a href="/other/about" id="about">jQuery</a></li>
-                <li><a href="/other/about" id="about">HTML</a></li>
-                <li><a href="/other/about" id="about">Git</a></li>
+{#            添加视屏教程列表#}
+                {% for Video in Video_list %}
+                 <li><a href="?video_id={{ Video.id }}" id="about">{{ Video.Video_name }}</a></li>
+                {% endfor %}
+                <li><a href="/book"  id="about">文档</a></li>
                 <li><a href="/blog"  id="about">博客</a></li>
                 <li><a href="/other/about" id="about">关于本站</a></li>
                 <li><a href="/other/contact" id="contact">联系站长</a></li>
-{#                <li id="loginLi"><a tabindex="-1" href="/other/contact">登录/注册</a></li>#}
-                <!--li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="userName"> 游客 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li id="loginLi"><a tabindex="-1" href="javascript:void(0)">登录/注册</a></li>
-                        <li class="divider" role="presentation"></li>
-                        <li class="disabled" id="selfLi"><a tabindex="-1" id="self" href="javascript:void(0)">个人中心</a></li>
-                        <li class="disabled" id="logoutLi"><a tabindex="-1" id="logout" href="javascript:void(0)">注销</a></li>
-                    </ul>
-                </li-->
                 <li>&nbsp;&nbsp;&nbsp;</li>
                 <form class="navbar-form navbar-right" role="search" >
                     <div class="form-group">

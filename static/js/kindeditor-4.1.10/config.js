@@ -1,7 +1,7 @@
 KindEditor.ready(function(K) {
                 K.create('textarea',{
                     width:'800px',
-                    height:'200px',
+                    height:'600px',
                     uploadJson: '/admin/upload/kindeditor',
                 });
                 // K.create('textarea[name=content]',{

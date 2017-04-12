@@ -13,10 +13,14 @@ class book_infoAdmin(admin.ModelAdmin):
     )
 
 class Chapter_ArticleAdmin(admin.ModelAdmin):
-    list_display = ('Chapter_book',  'chapter_title', 'Chapter_level', 'chapter_is_recommend',)
+    list_display = ('Chapter_book',  'chapter_title', 'Chapter_level', 'chapter_is_recommend', 'chapter_display')
     list_display_links = ('Chapter_book', 'chapter_title',)
-    list_editable = ('Chapter_level', 'chapter_is_recommend',)
-
+    list_editable = ('Chapter_level', 'chapter_is_recommend', 'chapter_display')
+    fieldsets = (
+        (None, {
+            'fields': ('Chapter_book', 'Chapter_level', 'chapter_title', 'chapter_desc', 'chapter_content', 'chapter_is_recommend', 'chapter_display')
+        }),
+    )
     class Media:
         js = (
             '/static/js/kindeditor-4.1.10/kindeditor-min.js',
