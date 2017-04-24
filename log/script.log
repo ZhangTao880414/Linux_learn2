@@ -2633,3 +2633,859 @@ AttributeError: 'Video_Category' object has no attribute 'Category_name'
 2017-04-25 01:55:48,648 [Thread-135:13652] [django.request:98] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/auth/group/1/
 2017-04-25 02:48:46,382 [Thread-29:11376] [django.request:170] [base:get_response] [WARNING]- Not Found: /school/students
 2017-04-25 02:48:46,453 [Thread-30:13672] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-25 03:58:04,739 [Thread-44:10804] [django.request:170] [base:get_response] [WARNING]- Not Found: //admin
+2017-04-25 03:58:31,313 [Thread-52:17324] [django.request:182] [base:get_response] [WARNING]- Forbidden (Permission denied): /admin/auth/group/
+2017-04-25 03:58:40,552 [Thread-54:16920] [django.request:182] [base:get_response] [WARNING]- Forbidden (Permission denied): /admin/auth/
+2017-04-25 03:59:10,198 [Thread-69:17304] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/auth/group/2/delete/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1707, in delete_view
+    [obj], opts, request.user, self.admin_site, using)
+  File "c:\python27\lib\site-packages\django\contrib\admin\utils.py", line 118, in get_deleted_objects
+    collector.collect(objs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\utils.py", line 182, in collect
+    return super(NestedObjects, self).collect(objs, source_attr=source_attr, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\deletion.py", line 228, in collect
+    elif sub_objs:
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 170, in __nonzero__
+    return type(self).__bool__(self)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 166, in __bool__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.guardian_groupobjectpermission' doesn't exist")
+2017-04-25 03:59:25,187 [Thread-76:16284] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/auth/group/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1574, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1333, in response_action
+    response = func(self, request, queryset)
+  File "c:\python27\lib\site-packages\django\contrib\admin\actions.py", line 37, in delete_selected
+    queryset, opts, request.user, modeladmin.admin_site, using)
+  File "c:\python27\lib\site-packages\django\contrib\admin\utils.py", line 118, in get_deleted_objects
+    collector.collect(objs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\utils.py", line 182, in collect
+    return super(NestedObjects, self).collect(objs, source_attr=source_attr, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\deletion.py", line 228, in collect
+    elif sub_objs:
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 170, in __nonzero__
+    return type(self).__bool__(self)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 166, in __bool__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.guardian_groupobjectpermission' doesn't exist")
+2017-04-25 03:59:43,085 [Thread-86:6984] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/auth/group/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1574, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1333, in response_action
+    response = func(self, request, queryset)
+  File "c:\python27\lib\site-packages\django\contrib\admin\actions.py", line 37, in delete_selected
+    queryset, opts, request.user, modeladmin.admin_site, using)
+  File "c:\python27\lib\site-packages\django\contrib\admin\utils.py", line 118, in get_deleted_objects
+    collector.collect(objs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\utils.py", line 182, in collect
+    return super(NestedObjects, self).collect(objs, source_attr=source_attr, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\deletion.py", line 228, in collect
+    elif sub_objs:
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 170, in __nonzero__
+    return type(self).__bool__(self)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 166, in __bool__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.guardian_groupobjectpermission' doesn't exist")
+2017-04-25 04:01:14,290 [Thread-100:16848] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/auth/group/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1574, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1333, in response_action
+    response = func(self, request, queryset)
+  File "c:\python27\lib\site-packages\django\contrib\admin\actions.py", line 37, in delete_selected
+    queryset, opts, request.user, modeladmin.admin_site, using)
+  File "c:\python27\lib\site-packages\django\contrib\admin\utils.py", line 118, in get_deleted_objects
+    collector.collect(objs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\utils.py", line 182, in collect
+    return super(NestedObjects, self).collect(objs, source_attr=source_attr, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\deletion.py", line 228, in collect
+    elif sub_objs:
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 170, in __nonzero__
+    return type(self).__bool__(self)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 166, in __bool__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.guardian_groupobjectpermission' doesn't exist")
+2017-04-25 04:01:48,407 [Thread-108:16260] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/auth/group/1/delete/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1707, in delete_view
+    [obj], opts, request.user, self.admin_site, using)
+  File "c:\python27\lib\site-packages\django\contrib\admin\utils.py", line 118, in get_deleted_objects
+    collector.collect(objs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\utils.py", line 182, in collect
+    return super(NestedObjects, self).collect(objs, source_attr=source_attr, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\deletion.py", line 228, in collect
+    elif sub_objs:
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 170, in __nonzero__
+    return type(self).__bool__(self)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 166, in __bool__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.guardian_groupobjectpermission' doesn't exist")
+2017-04-25 04:01:58,118 [Thread-112:16404] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/auth/group/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1574, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1333, in response_action
+    response = func(self, request, queryset)
+  File "c:\python27\lib\site-packages\django\contrib\admin\actions.py", line 37, in delete_selected
+    queryset, opts, request.user, modeladmin.admin_site, using)
+  File "c:\python27\lib\site-packages\django\contrib\admin\utils.py", line 118, in get_deleted_objects
+    collector.collect(objs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\utils.py", line 182, in collect
+    return super(NestedObjects, self).collect(objs, source_attr=source_attr, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\deletion.py", line 228, in collect
+    elif sub_objs:
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 170, in __nonzero__
+    return type(self).__bool__(self)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 166, in __bool__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.guardian_groupobjectpermission' doesn't exist")
+2017-04-25 04:53:17,183 [Thread-9:3812] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/VideoHome/ad/add/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "c:\python27\lib\site-packages\django\utils\encoding.py", line 92, in force_text
+    s = six.text_type(s)
+  File "F:\workspaces\Linux_learn2\VideoHome\models.py", line 76, in __unicode__
+    return self.title
+AttributeError: 'Ad' object has no attribute 'title'
+2017-04-25 04:55:05,174 [Thread-7:18144] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/VideoHome/ad/add/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "c:\python27\lib\site-packages\django\utils\encoding.py", line 92, in force_text
+    s = six.text_type(s)
+  File "F:\workspaces\Linux_learn2\VideoHome\models.py", line 76, in __unicode__
+    return self.title
+AttributeError: 'Ad' object has no attribute 'title'
+2017-04-25 05:04:53,019 [Thread-45:17724] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/VideoHome/ad/add/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1470, in changeform_view
+    self.log_addition(request, new_object)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 810, in log_addition
+    object_repr=force_text(object),
+  File "c:\python27\lib\site-packages\django\utils\encoding.py", line 92, in force_text
+    s = six.text_type(s)
+  File "F:\workspaces\Linux_learn2\VideoHome\models.py", line 76, in __unicode__
+    return self.title
+AttributeError: 'Ad' object has no attribute 'title'
+2017-04-25 05:53:07,358 [Thread-2:19880] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 34, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "c:\python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "c:\python27\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'ad.callback_url', expected 'empty' \u6216 'endfor'
+2017-04-25 05:53:35,658 [Thread-10:20516] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 34, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "c:\python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "c:\python27\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'ad.callback_url', expected 'empty' \u6216 'endfor'
+2017-04-25 05:54:02,387 [Thread-17:20324] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 34, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 210, in do_extends
+    nodelist = parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 184, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "c:\python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "c:\python27\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 394, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'ad.callback_url', expected 'empty' \u6216 'endfor'
+2017-04-25 06:06:17,424 [Thread-2:17032] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 36, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "c:\python27\lib\site-packages\django\template\context.py", line 241, in bind_template
+    updates.update(processor(self.request))
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 12, in video_ad_setting
+    return render('video_ad.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 46, in get_template
+    raise TemplateDoesNotExist(template_name)
+TemplateDoesNotExist: {'i': <Ad: python>, 'Ad_list': [<Ad: python>, <Ad: linux>, <Ad: htnl>], 'request': <WSGIRequest: GET '/'>}
+2017-04-25 06:06:40,509 [Thread-7:21836] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 36, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "c:\python27\lib\site-packages\django\template\context.py", line 241, in bind_template
+    updates.update(processor(self.request))
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 12, in video_ad_setting
+    return render('video_ad.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 46, in get_template
+    raise TemplateDoesNotExist(template_name)
+TemplateDoesNotExist: {'i': <Ad: python>, 'Ad_list': [<Ad: python>, <Ad: linux>, <Ad: htnl>], 'request': <WSGIRequest: GET '/'>}
+2017-04-25 06:09:37,190 [Thread-13:20176] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 36, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "c:\python27\lib\site-packages\django\template\context.py", line 241, in bind_template
+    updates.update(processor(self.request))
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 12, in video_ad_setting
+    return render('video_ad.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 46, in get_template
+    raise TemplateDoesNotExist(template_name)
+TemplateDoesNotExist: {'i': <Ad: python>, 'Ad_list': [<Ad: python>, <Ad: linux>, <Ad: htnl>], 'request': <WSGIRequest: GET '/'>}
+2017-04-25 06:09:47,250 [Thread-2:22112] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 36, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "c:\python27\lib\site-packages\django\template\context.py", line 241, in bind_template
+    updates.update(processor(self.request))
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 12, in video_ad_setting
+    return render('video_ad.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 46, in get_template
+    raise TemplateDoesNotExist(template_name)
+TemplateDoesNotExist: {'i': <Ad: python>, 'Ad_list': [<Ad: python>, <Ad: linux>, <Ad: htnl>], 'request': <WSGIRequest: GET '/'>}
+2017-04-25 06:26:46,694 [Thread-15:23216] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 36, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 872, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "c:\python27\lib\site-packages\django\template\base.py", line 341, in parse
+    compiled_result = compile_func(self, token)
+  File "c:\python27\lib\site-packages\django\contrib\staticfiles\templatetags\staticfiles.py", line 37, in do_static
+    return StaticFilesNode.handle_token(parser, token)
+  File "c:\python27\lib\site-packages\django\templatetags\static.py", line 126, in handle_token
+    path = parser.compile_filter(bits[1])
+  File "c:\python27\lib\site-packages\django\template\base.py", line 423, in compile_filter
+    return FilterExpression(token, self)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 639, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: '{{' from '"uploads/"{{'
+2017-04-25 06:53:29,408 [Thread-3:22560] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-25 06:55:40,209 [Thread-5:15824] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-25 06:55:49,734 [Thread-7:20608] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-25 06:55:55,519 [Thread-9:22548] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/1
+2017-04-25 06:56:37,905 [Thread-11:22512] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-25 06:57:26,471 [Thread-13:22580] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-25 06:58:22,405 [Thread-14:21948] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 36, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "c:\python27\lib\site-packages\django\template\loaders\base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 261, in compile_string
+    return parser.parse()
+  File "c:\python27\lib\site-packages\django\template\base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'Ad_list.image_url'
+2017-04-25 06:58:59,993 [Thread-22:18260] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-25 07:03:01,062 [Thread-13:22564] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-25 07:03:55,203 [Thread-3:23660] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-25 07:04:16,618 [Thread-6:24104] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-25 07:07:44,871 [Thread-3:18872] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-25 07:08:37,023 [Thread-6:22564] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-25 07:09:07,963 [Thread-8:20068] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-25 07:15:31,732 [Thread-2:24156] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/follow
+2017-04-25 07:21:59,127 [Thread-2:24640] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 39, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: video_category.html
+2017-04-25 07:22:19,756 [Thread-9:24956] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 39, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: video_category.html
+2017-04-25 07:22:43,753 [Thread-20:25284] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/follow
+2017-04-25 07:22:45,891 [Thread-21:25328] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/follow
+2017-04-25 07:22:46,755 [Thread-22:25332] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/follow
