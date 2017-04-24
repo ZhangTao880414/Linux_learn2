@@ -20,6 +20,7 @@ class User(AbstractUser):
         verbose_name_plural = verbose_name
         ordering = ['-id']
 
+
     def __unicode__(self):
         return self.username
 
@@ -73,7 +74,7 @@ class Article(models.Model):
     user = models.ForeignKey(User, verbose_name='用户')
     category = models.ForeignKey(Category, blank=True, null=True, verbose_name='分类')
     tag = models.ManyToManyField(Tag, verbose_name='标签')
-
+    Article_display = models.BooleanField(default=False, verbose_name='是否发布')
     objects = ArticleManager()
 
     class Meta:
@@ -107,9 +108,9 @@ class Links(models.Model):
     title = models.CharField(max_length=50, verbose_name='标题')
     description = models.CharField(max_length=200, verbose_name='友情链接描述')
     callback_url = models.URLField(verbose_name='url地址')
+    Links_display = models.BooleanField(default=False, verbose_name='是否发布')
     date_publish = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
     index = models.IntegerField(default=999, verbose_name='排列顺序(从小到大)')
-
     class Meta:
         verbose_name = '友情链接'
         verbose_name_plural = verbose_name

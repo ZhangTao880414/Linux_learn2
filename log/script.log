@@ -2615,3 +2615,21 @@ AttributeError: 'Video_Category' object has no attribute 'Category_name'
 2017-04-13 03:30:22,588 [Thread-30:3432] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/contact
 2017-04-13 03:37:59,385 [Thread-22:28196] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
 2017-04-13 03:38:11,770 [Thread-24:24408] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-18 17:53:10,404 [Thread-13:6204] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-21 06:41:56,069 [Thread-13:4836] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-21 06:50:14,444 [Thread-68:5952] [django.request:170] [base:get_response] [WARNING]- Not Found: /blo
+2017-04-21 07:45:07,282 [Thread-3:8200] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-21 07:50:11,180 [Thread-44:12216] [django.request:170] [base:get_response] [WARNING]- Not Found: /blogcategory/portal.php
+2017-04-22 03:36:38,023 [Thread-3:8116] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-22 03:36:53,289 [Thread-4:11296] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/about
+2017-04-22 03:36:55,780 [Thread-5:5960] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/contact
+2017-04-22 03:37:01,151 [Thread-6:9320] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/contact
+2017-04-22 03:38:00,105 [Thread-18:11808] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/follow
+2017-04-22 03:38:23,696 [Thread-24:11424] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/follow
+2017-04-22 03:38:36,342 [Thread-29:6380] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/about
+2017-04-24 18:58:07,226 [Thread-13:11832] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-25 01:46:47,142 [Thread-3:9896] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-25 01:48:48,388 [Thread-21:13940] [django.request:170] [base:get_response] [WARNING]- Not Found: /admin/video
+2017-04-25 01:55:48,648 [Thread-135:13652] [django.request:98] [csrf:_reject] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/auth/group/1/
+2017-04-25 02:48:46,382 [Thread-29:11376] [django.request:170] [base:get_response] [WARNING]- Not Found: /school/students
+2017-04-25 02:48:46,453 [Thread-30:13672] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
