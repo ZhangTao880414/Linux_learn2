@@ -21,8 +21,7 @@ def get_chapter(request):
     print cid
     Chapter_content = Chapter_Article.objects.filter(pk=cid)
     Chapter_content = getPage(request, Chapter_content)
-     # print Chapter_content
-    return render(request, 'BookHome2.html', locals())
+    return render(request, 'Book_catagory.html', locals())
 
 
 def get_book(request):

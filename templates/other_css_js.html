@@ -1,0 +1,30 @@
+{% load staticfiles %}
+{% block other_css %}
+    <style type="text/css">
+
+
+</style>
+<script type="text/javascript" src="{% static "js/libs/jquery-3.1.0.min.js"%}"></script>
+<script type="text/javascript" src="{% static "js/libs/bootstrap.min.js"%}"></script>
+<style type="text/css">
+    /*footer叠加层*/
+        .footer-div {
+            background-color: rgb(42,42,42);
+            border-top: solid 2px #8bcaed;
+        }
+
+
+        /*版权标识*/
+        .copyright {
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 1em;
+            background-color: rgb(52, 62, 73);
+            margin-top: 1em;
+        }
+
+        .copyright a {
+            color: #FFFFFF;
+        }
+</style>
+{% endblock %}  

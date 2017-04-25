@@ -1,0 +1,35 @@
+{% load staticfiles %}
+{% block video_header %}
+    <!--顶部导航-->
+<header>
+    <nav class="navbar navbar-inverse" role="navigation" id="headerNav">
+        <div class=" navbar-collapse ">
+            <a class="navbar-brand" href="/" id="Brand" name="top"><b>Linux学堂——爱运维|爱编程</b></a>
+        </div>
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/" id="home">主页</a></li>
+{#            添加视屏教程列表#}
+                {% for Video in Video_list %}
+                 <li><a href="video?video_id={{ Video.id }}" id="about">{{ Video.Video_name }}</a></li>
+                {% endfor %}
+                <li><a href="/book"  id="about">文档</a></li>
+                <li><a href="/blog"  id="about">博客</a></li>
+                <li><a href="/other/contact" id="contact">联系站长</a></li>
+                <li>&nbsp;&nbsp;&nbsp;</li>
+                <form class="navbar-form navbar-right" role="search" >
+                    <div class="form-group">
+                        <div class="input-group" style="width:400px;">
+                            <input type="text" class="form-control" placeholder="站内搜索">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-search" id="searchSpan"></span>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+{% endblock %}

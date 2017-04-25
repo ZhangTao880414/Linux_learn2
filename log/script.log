@@ -3489,3 +3489,673 @@ TemplateDoesNotExist: video_category.html
 2017-04-25 07:22:43,753 [Thread-20:25284] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/follow
 2017-04-25 07:22:45,891 [Thread-21:25328] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/follow
 2017-04-25 07:22:46,755 [Thread-22:25332] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/follow
+2017-04-25 07:51:48,315 [Thread-6:25516] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-26 05:40:46,289 [Thread-13:8076] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-26 05:57:55,427 [Thread-15:6412] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-26 05:58:34,635 [Thread-36:7948] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/followe
+2017-04-26 05:58:37,926 [Thread-37:7116] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/contact
+2017-04-26 05:58:40,654 [Thread-38:2892] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/contact
+2017-04-26 05:58:49,407 [Thread-44:4968] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/contact
+2017-04-26 06:43:19,244 [Thread-8:7612] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 49, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: Book_category.html
+2017-04-26 06:43:20,114 [Thread-9:10208] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 49, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: Book_category.html
+2017-04-26 06:43:23,941 [Thread-10:10792] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 49, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: Book_category.html
+2017-04-26 06:43:28,500 [Thread-11:11824] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 49, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: Book_category.html
+2017-04-26 06:43:59,111 [Thread-16:10040] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 49, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: Book_category.html
+2017-04-26 06:45:04,467 [Thread-22:11580] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 49, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: Book_category.html
+2017-04-26 06:45:07,532 [Thread-23:10108] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/contact
+2017-04-26 06:46:12,936 [Thread-36:9308] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 49, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: Book_category.html
+2017-04-26 06:49:39,559 [Thread-2:11988] [django.request:170] [base:get_response] [WARNING]- Not Found: /category
+2017-04-26 06:49:41,904 [Thread-3:9044] [django.request:170] [base:get_response] [WARNING]- Not Found: /category
+2017-04-26 06:51:24,503 [Thread-19:11604] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 49, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: Book_category.html
+2017-04-26 06:53:00,556 [Thread-2:10520] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 49, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: Book_category.html
+2017-04-26 06:53:05,612 [Thread-3:11812] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 49, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: Book_category.html
+2017-04-26 06:53:27,494 [Thread-2:11284] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 49, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: Book_category.html
+2017-04-26 06:54:44,694 [Thread-2:8760] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 48, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: Book_category.html
+2017-04-26 06:55:35,959 [Thread-8:9308] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /book/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\BOOK\views.py", line 48, in get_book
+    return render(request, 'BookHome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 151, in render
+    template = context.template.engine.get_template(template)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "c:\python27\lib\site-packages\django\template\engine.py", line 146, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: Book_category.html
+2017-04-26 07:02:37,947 [Thread-3:11064] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video/video_id=2
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 59, in video_category
+    Chapter_id = Video_Chapter.objects.get(Video_Chapter_name_id=video_id, Video_Chapter_level=1).id
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Video_Chapter matching query does not exist.
+2017-04-26 07:02:55,088 [Thread-4:12696] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video/video_id=2
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 59, in video_category
+    Chapter_id = Video_Chapter.objects.get(Video_Chapter_name_id=video_id, Video_Chapter_level=1).id
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Video_Chapter matching query does not exist.
+2017-04-26 07:02:56,017 [Thread-5:12708] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video/video_id=2
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 59, in video_category
+    Chapter_id = Video_Chapter.objects.get(Video_Chapter_name_id=video_id, Video_Chapter_level=1).id
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Video_Chapter matching query does not exist.
+2017-04-26 07:02:58,917 [Thread-6:9900] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video/video_id=1
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 59, in video_category
+    Chapter_id = Video_Chapter.objects.get(Video_Chapter_name_id=video_id, Video_Chapter_level=1).id
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Video_Chapter matching query does not exist.
+2017-04-26 07:03:05,703 [Thread-8:12856] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 59, in video_category
+    Chapter_id = Video_Chapter.objects.get(Video_Chapter_name_id=video_id, Video_Chapter_level=1).id
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Video_Chapter matching query does not exist.
+2017-04-26 07:03:16,528 [Thread-13:12568] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 59, in video_category
+    Chapter_id = Video_Chapter.objects.get(Video_Chapter_name_id=video_id, Video_Chapter_level=1).id
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Video_Chapter matching query does not exist.
+2017-04-26 07:03:34,605 [Thread-19:9396] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 59, in video_category
+    Chapter_id = Video_Chapter.objects.get(Video_Chapter_name_id=video_id, Video_Chapter_level=1).id
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Video_Chapter matching query does not exist.
+2017-04-26 07:03:35,880 [Thread-20:11996] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 59, in video_category
+    Chapter_id = Video_Chapter.objects.get(Video_Chapter_name_id=video_id, Video_Chapter_level=1).id
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Video_Chapter matching query does not exist.
+2017-04-26 07:03:36,750 [Thread-21:12396] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 59, in video_category
+    Chapter_id = Video_Chapter.objects.get(Video_Chapter_name_id=video_id, Video_Chapter_level=1).id
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Video_Chapter matching query does not exist.
+2017-04-26 07:03:37,418 [Thread-22:11792] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 59, in video_category
+    Chapter_id = Video_Chapter.objects.get(Video_Chapter_name_id=video_id, Video_Chapter_level=1).id
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Video_Chapter matching query does not exist.
+2017-04-26 07:16:13,551 [Thread-7:12152] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 68, in video_category
+    Chapter_Title_list = Video_Chapter.objects.filter(Video_Chapter_name=video_name, chapter_display=1).order_by('Video_Chapter_level')
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "c:\python27\lib\site-packages\django\db\models\sql\query.py", line 1309, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "c:\python27\lib\site-packages\django\db\models\sql\query.py", line 1337, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "c:\python27\lib\site-packages\django\db\models\sql\query.py", line 1149, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "c:\python27\lib\site-packages\django\db\models\sql\query.py", line 1035, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "c:\python27\lib\site-packages\django\db\models\sql\query.py", line 1396, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'chapter_display' into field. Choices are: Video_Chapter_level, Video_Chapter_name, Video_Chapter_name_id, Video_chapter_content, Video_chapter_date_publish, Video_chapter_desc, Video_chapter_display, Video_chapter_is_recommend, Video_chapter_title, id
+2017-04-26 07:16:28,499 [Thread-12:13384] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 68, in video_category
+    Chapter_Title_list = Video_Chapter.objects.filter(Video_Chapter_name=video_name, chapter_display=1).order_by('Video_Chapter_level')
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "c:\python27\lib\site-packages\django\db\models\sql\query.py", line 1309, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "c:\python27\lib\site-packages\django\db\models\sql\query.py", line 1337, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "c:\python27\lib\site-packages\django\db\models\sql\query.py", line 1149, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "c:\python27\lib\site-packages\django\db\models\sql\query.py", line 1035, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "c:\python27\lib\site-packages\django\db\models\sql\query.py", line 1396, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'chapter_display' into field. Choices are: Video_Chapter_level, Video_Chapter_name, Video_Chapter_name_id, Video_chapter_content, Video_chapter_date_publish, Video_chapter_desc, Video_chapter_display, Video_chapter_is_recommend, Video_chapter_title, id
+2017-04-26 07:17:46,644 [Thread-4:13788] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 60, in video_category
+    video_name = Video_info.objects.get(pk=video_id)
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 325, in get
+    clone = self.filter(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "c:\python27\lib\site-packages\django\db\models\sql\query.py", line 1309, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "c:\python27\lib\site-packages\django\db\models\sql\query.py", line 1337, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "c:\python27\lib\site-packages\django\db\models\sql\query.py", line 1208, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "c:\python27\lib\site-packages\django\db\models\sql\query.py", line 1101, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "c:\python27\lib\site-packages\django\db\models\lookups.py", line 101, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "c:\python27\lib\site-packages\django\db\models\lookups.py", line 139, in get_prep_lookup
+    return self.lhs.output_field.get_prep_lookup(self.lookup_name, self.rhs)
+  File "c:\python27\lib\site-packages\django\db\models\fields\__init__.py", line 727, in get_prep_lookup
+    return self.get_prep_value(value)
+  File "c:\python27\lib\site-packages\django\db\models\fields\__init__.py", line 985, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+2017-04-26 07:21:07,924 [Thread-11:12584] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 58, in video_category
+    Chapter_id = Video_Chapter.objects.get(Video_Chapter_name_id=video_id, Video_Chapter_level=1).id
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Video_Chapter matching query does not exist.
+2017-04-26 07:21:10,667 [Thread-12:12448] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 58, in video_category
+    Chapter_id = Video_Chapter.objects.get(Video_Chapter_name_id=video_id, Video_Chapter_level=1).id
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Video_Chapter matching query does not exist.
+2017-04-26 07:21:12,477 [Thread-13:13572] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 58, in video_category
+    Chapter_id = Video_Chapter.objects.get(Video_Chapter_name_id=video_id, Video_Chapter_level=1).id
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Video_Chapter matching query does not exist.
+2017-04-26 07:21:14,404 [Thread-14:12796] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 58, in video_category
+    Chapter_id = Video_Chapter.objects.get(Video_Chapter_name_id=video_id, Video_Chapter_level=1).id
+  File "c:\python27\lib\site-packages\django\db\models\manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
+    self.model._meta.object_name
+DoesNotExist: Video_Chapter matching query does not exist.

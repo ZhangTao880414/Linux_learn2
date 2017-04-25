@@ -1,0 +1,110 @@
+{% load staticfiles %}
+<meta charset="UTF-8">
+<!--依赖-->
+<link rel="stylesheet" href="{% static "css/libs/bootstrap.min.css"%}">
+<!--内联样式表-->
+<style type="text/css">
+#total {
+    min-height: 600px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    background-color: rgba(57, 89, 128, 0.52);
+    color: rgb(236, 236, 236);
+    height: auto;
+    -webkit-box-shadow: 0 5px 8px #464646;
+    -moz-box-shadow: 0 5px 8px #464646;
+    box-shadow: 0 5px 8px #464646;
+
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/* 标题 */
+.head {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 5px 5px 3px #395980;
+    color: #ecf3f4;
+}
+
+/* 内容 */
+.content {
+    font-size: 1.5em;
+}
+
+.footer-div {
+    background-color: rgb(42,42,42);
+    border-top: solid 2px #a20812;
+    width: 100%;
+}
+
+.fill-content {
+    flex: 1;
+    width: 100%;
+}
+
+.copyright a {
+    color: #FFFFFF;
+}
+
+/*版权标识*/
+.copyright {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1em;
+    background-color: rgba(88, 138, 198, 0.43);
+    margin-top: 1em;
+    box-shadow: 0px 0px 5px #661611 inset;
+}
+
+/*文字特效*/
+.box1 {
+    text-shadow:
+            0px 0px 0 rgb(188,178,188),1px 0px 0 rgb(173,163,173),
+            2px 0px 0 rgb(157,147,157),3px 0px 0 rgb(142,132,142),
+            4px 0px 0 rgb(126,116,126),5px 0px 0 rgb(111,101,111),
+            6px 0px 0 rgb(95,85,95), 7px 0px 0 rgb(79,69,79),
+            8px 0px 7px rgba(0,0,0,0.35),8px 0px 1px rgba(0,0,0,0.5),
+            0px 0px 7px rgba(0,0,0,.2);
+}
+</style>
+
+<script type="text/javascript" src="{% static "js/libs/jquery-3.1.0.min.js"%}"></script>
+<script type="text/javascript" src="{% static "js/libs/bootstrap.min.js"%}"></script>
+
+<!--html-->
+
+<div class="container" id="total">
+
+    <div class="row">
+        <div class="col-md-12 head">
+            <p><h1>关于</h1></p>
+        </div>
+
+        <div class="col-md-12 content">
+            <p><h3 class="box1">服务条款</h3></p>
+            <ul>
+                <li>使用本站将被视为同意网站所有协议</li>
+                <li>Q站提供的是合法的网络视频,音乐,图片等内容</li>
+                <li>网站由个人开发,托管于腾讯云</li>
+            </ul>
+        </div>
+        <div class="col-md-12 content">
+            <p><h3 class="box1">帮助中心</h3></p>
+            <ul>
+                <li>如果网站侵犯了您的个人权益请发邮件至: yangwei13@outlook.com 进行申诉</li>
+                <li>如需反馈请发送邮件至:yangwei13@outlook.com</li>
+            </ul>
+        </div>
+        <div class="col-md-12 content">
+            <p><h3 class="box1">免责声明</h3></p>
+            <ul>
+                <li>用户应该遵守相关的法律法规</li>
+                <li>资源均来源于网络公开和个人用户上传,网站不负产权责任</li>
+                <li>网站享有监督权,可以删除非法的资源</li>
+            </ul>
+        </div>
+    </div>
+    
+</div>
