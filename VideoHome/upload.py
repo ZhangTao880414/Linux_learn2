@@ -31,7 +31,7 @@ def upload_generation_dir(dir_name):
 # 图片上传
 def image_upload(files, dir_name):
     #允许上传文件类型
-    allow_suffix =['jpg', 'png', 'jpeg', 'gif', 'bmp']
+    allow_suffix =['jpg', 'png', 'jpeg', 'gif', 'bmp',]
     file_suffix = files.name.split(".")[-1]
     if file_suffix not in allow_suffix:
         return {"error": 1, "message": "图片格式不正确"}

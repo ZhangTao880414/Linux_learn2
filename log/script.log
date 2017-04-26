@@ -4159,3 +4159,166 @@ Traceback (most recent call last):
   File "c:\python27\lib\site-packages\django\db\models\query.py", line 334, in get
     self.model._meta.object_name
 DoesNotExist: Video_Chapter matching query does not exist.
+2017-04-26 10:18:57,378 [Thread-6:18272] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-26 10:19:07,134 [Thread-20:18752] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/VideoHome/video_chapter/1/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1519, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (Video_chapter_content) specified for Video_Chapter. Check fields/fieldsets/exclude attributes of class video_Chapter_ArticleAdmin.
+2017-04-26 10:19:16,446 [Thread-21:15276] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/VideoHome/video_chapter/1/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1519, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (Video_chapter_content) specified for Video_Chapter. Check fields/fieldsets/exclude attributes of class video_Chapter_ArticleAdmin.
+2017-04-26 10:19:40,200 [Thread-33:12984] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/VideoHome/video_chapter/add/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (Video_chapter_content) specified for Video_Chapter. Check fields/fieldsets/exclude attributes of class video_Chapter_ArticleAdmin.
+2017-04-26 10:24:13,786 [Thread-5:19812] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/VideoHome/video_chapter/add/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (Video_chapter_content) specified for Video_Chapter. Check fields/fieldsets/exclude attributes of class video_Chapter_ArticleAdmin.
+2017-04-26 10:25:56,223 [Thread-9:18716] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/VideoHome/video_chapter/add/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (Video_chapter_content) specified for Video_Chapter. Check fields/fieldsets/exclude attributes of class video_Chapter_ArticleAdmin.
+2017-04-26 10:28:25,052 [Thread-8:19168] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/VideoHome/video_chapter/add/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 616, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\views\decorators\cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1516, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 34, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 30, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "c:\python27\lib\site-packages\django\utils\decorators.py", line 145, in inner
+    return func(*args, **kwargs)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 1456, in changeform_view
+    ModelForm = self.get_form(request, obj)
+  File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    % (e, self.__class__.__name__))
+FieldError: Unknown field(s) (Video_chapter_content) specified for Video_Chapter. Check fields/fieldsets/exclude attributes of class video_Chapter_ArticleAdmin.
