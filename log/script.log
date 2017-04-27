@@ -4322,3 +4322,105 @@ Traceback (most recent call last):
   File "c:\python27\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
     % (e, self.__class__.__name__))
 FieldError: Unknown field(s) (Video_chapter_content) specified for Video_Chapter. Check fields/fieldsets/exclude attributes of class video_Chapter_ArticleAdmin.
+2017-04-26 11:16:38,806 [Thread-95:18256] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/video-js.css
+2017-04-26 11:16:40,776 [Thread-97:20788] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/video-js.css
+2017-04-26 11:19:14,367 [Thread-99:18000] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/video-js.css
+2017-04-26 11:19:14,374 [Thread-100:22196] [django.request:170] [base:get_response] [WARNING]- Not Found: /MY_VIDEO_POSTER.jpg
+2017-04-26 13:38:01,200 [Thread-6:16816] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-26 13:39:52,494 [Thread-3:22728] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /video_chapter/2017/04/video.mp4
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 68, in video_category
+    print Chapter_name.Video_chapter_video
+UnboundLocalError: local variable 'Chapter_name' referenced before assignment
+2017-04-26 22:29:45,598 [Thread-13:9180] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-26 22:36:01,290 [Thread-118:7504] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-26 22:36:03,467 [Thread-122:10508] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-26 22:36:04,065 [Thread-124:9684] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-26 22:36:04,631 [Thread-126:8296] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-26 22:36:05,947 [Thread-128:8256] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-26 22:46:27,914 [Thread-174:9228] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/about
+2017-04-26 23:01:15,944 [Thread-177:10984] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-27 01:44:41,308 [Thread-232:13656] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-27 01:57:57,546 [Thread-268:500] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-27 01:57:58,608 [Thread-272:6872] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-27 01:57:59,306 [Thread-274:14092] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-27 01:57:59,789 [Thread-276:8520] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-27 01:58:00,535 [Thread-278:14220] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-27 01:58:01,513 [Thread-280:13344] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-27 01:58:01,868 [Thread-282:14316] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-27 01:58:02,325 [Thread-284:9700] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-27 01:58:12,563 [Thread-287:7680] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-27 02:09:17,323 [Thread-358:11868] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-27 02:09:18,349 [Thread-360:12276] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-27 02:11:06,513 [Thread-388:12844] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/contact
+2017-04-27 02:11:10,586 [Thread-389:13140] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/contact
+2017-04-27 02:11:20,005 [Thread-391:8188] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/followe
+2017-04-27 02:11:22,816 [Thread-392:15348] [django.request:170] [base:get_response] [WARNING]- Not Found: /other/contact
+2017-04-27 02:11:40,523 [Thread-398:13448] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-27 02:11:43,811 [Thread-400:7756] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-27 02:11:48,365 [Thread-402:1800] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-27 02:45:11,581 [Thread-3:16512] [django.request:170] [base:get_response] [WARNING]- Not Found: /portal.php
+2017-04-27 15:30:45,167 [Thread-13:4700] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-27 15:31:13,233 [Thread-42:7420] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/
+2017-04-27 15:31:13,313 [Thread-43:6584] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-27 16:31:24,319 [Thread-24:6432] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /blogarchive/
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\blog\views.py", line 62, in archive
+    return render(request, 'archive.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1271, "Illegal mix of collations for operation 'like'")

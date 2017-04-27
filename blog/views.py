@@ -17,7 +17,6 @@ def global_setting(request):
     # 站点基本信息
     SITE_URL = settings.SITE_URL
     SITE_NAME = settings.SITE_NAME
-    # SITE_DESC = settings.SITE_DESC
     # 分类信息获取（导航数据）
     category_list = Category.objects.all()[:6]
     # 文章归档数据
@@ -29,9 +28,9 @@ def global_setting(request):
     # 友情链接数据（完成）
     Links_list = Links.objects.all()
     # 文章排行榜数据（按浏览量待完成）
-    article_click_count_list = Article.objects.all().order_by('click_count')
+    article_click_count_list = Article.objects.filter(Article_display=1).order_by('-click_count')
     # 文章排行榜数据按站长推荐的功能待完成）
-    article_is_recommend_list =Article.objects.all().order_by('-is_recommend')
+    article_is_recommend_list =Article.objects.filter(Article_display=1).order_by('-is_recommend', '-click_count')
     # 评论排行
     comment_count_list = Comment.objects.values('article').annotate(comment_count=Count('article')).order_by('-comment_count')
     article_comment_list = [Article.objects.get(pk=comment['article']) for comment in comment_count_list]
@@ -42,22 +41,8 @@ def global_setting(request):
 def index(request):
     try:
         # 最新文章数据
-        article_list = Article.objects.all()
+        article_list = Article.objects.filter(Article_display=1)
         article_list = getPage(request, article_list)
-        # 文章归档
-        # 1、先要去获取到文章中有的 年份-月份  2015/06文章归档
-        # 使用values和distinct去掉重复数据（不可行）
-        # print Article.objects.values('date_publish').distinct()
-        # 直接执行原生sql呢？
-        # 第一种方式（不可行）
-        # archive_list =Article.objects.raw('SELECT id, DATE_FORMAT(date_publish, "%%Y-%%m") as col_date FROM blog_article ORDER BY date_publish')
-        # for archive in archive_list:
-        #     print archive
-        # 第二种方式（不推荐）
-        # cursor = connection.cursor()
-        # cursor.execute("SELECT DISTINCT DATE_FORMAT(date_publish, '%Y-%m') as col_date FROM blog_article ORDER BY date_publish")
-        # row = cursor.fetchall()
-        # print row
     except Exception as e:
         print e
         logger.error(e)
@@ -69,20 +54,11 @@ def archive(request):
         year = request.GET.get('year', None)
         month = request.GET.get('month', None)
         # 制作模糊查询
-        article_list = Article.objects.filter(date_publish__icontains=year+'-'+month)
+        article_list = Article.objects.filter(date_publish__icontains=year+'-'+month, Article_display=1)
         article_list = getPage(request, article_list)
     except Exception as e:
         logger.error(e)
     return render(request, 'archive.html', locals())
-
-# 按标签查询对应的文章列表
-# def tag(request):
-#     try:
-#         # 同学们自己实现该功能
-#         pass
-#     except Exception as e:
-#         logger.error(e)
-#     return render(request, 'archive.html', locals())
 
 # 分页代码
 def getPage(request, article_list):
@@ -212,7 +188,7 @@ def category(request):
             category = Category.objects.get(pk=cid)
         except Category.DoesNotExist:
             return render(request, 'failure.html', {'reason': '分类不存在'})
-        article_list = Article.objects.filter(category=category)
+        article_list = Article.objects.filter(category=category, Article_display=1)
         article_list = getPage(request, article_list)
     except Exception as e:
         logger.error(e)

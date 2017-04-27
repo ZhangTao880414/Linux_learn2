@@ -5,17 +5,17 @@ from models import *
 # Register your models here.
 class ArticleAdmin(admin.ModelAdmin):
 
-    list_display = ('title', 'desc', 'click_count', 'is_recommend',)
-    list_display_links = ('title', 'desc', )
-    list_editable = ('click_count', 'is_recommend',)
+    list_display = ('category', 'title', 'desc','user', 'click_count', 'is_recommend', 'Article_display',)
+    list_display_links = ('category', 'title', 'desc', 'user', )
+    list_editable = ('click_count', 'is_recommend', 'Article_display',)
 
     fieldsets = (
         (None, {
-            'fields': ('title', 'desc', 'content', 'user', 'category', 'tag', )
+            'fields': ('category', 'user', 'tag', 'title', 'desc', 'content', )
         }),
         ('高级设置', {
             'classes': ('collapse',),
-            'fields': ('click_count', 'is_recommend',)
+            'fields': ('click_count', 'is_recommend', )
         }),
     )
 

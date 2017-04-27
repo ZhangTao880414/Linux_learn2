@@ -6,6 +6,7 @@ img { border: 0; display: block }
 ul { list-style: none; }
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
 a { outline: none; }
+a { outline: none; }
 a:link, a:visited { text-decoration: none; color: #666 }
 a:hover { text-decoration: none; }
 .clear { clear: both; }

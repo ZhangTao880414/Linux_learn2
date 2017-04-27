@@ -7,3 +7,14 @@
 2017-04-05 18:54:33,216 [Thread-3:19016] [blog.views:208] [views:do_login] [ERROR]- Reverse for '' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
 2017-04-05 18:58:10,799 [Thread-43:10820] [blog.views:208] [views:do_login] [ERROR]- Reverse for '' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
 2017-04-10 04:30:35,960 [Thread-100:5468] [blog.views:128] [views:article] [ERROR]- invalid literal for int() with base 10: ''
+2017-04-27 16:31:24,236 [Thread-24:6432] [blog.views:61] [views:archive] [ERROR]- (1271, "Illegal mix of collations for operation 'like'")
+2017-04-27 16:37:07,246 [Thread-2:7936] [blog.views:195] [views:category] [ERROR]- Manager isn't accessible via Category instances
+2017-04-27 16:37:08,864 [Thread-3:9744] [blog.views:195] [views:category] [ERROR]- Manager isn't accessible via Category instances
+2017-04-27 16:37:09,543 [Thread-4:9432] [blog.views:195] [views:category] [ERROR]- Manager isn't accessible via Category instances
+2017-04-27 16:37:10,538 [Thread-5:1432] [blog.views:195] [views:category] [ERROR]- Manager isn't accessible via Category instances
+2017-04-27 16:38:10,470 [Thread-2:7276] [blog.views:195] [views:category] [ERROR]- 'Category' object has no attribute 'filter'
+2017-04-27 16:38:12,134 [Thread-3:8560] [blog.views:195] [views:category] [ERROR]- 'Category' object has no attribute 'filter'
+2017-04-27 16:38:12,723 [Thread-4:9188] [blog.views:195] [views:category] [ERROR]- 'Category' object has no attribute 'filter'
+2017-04-27 16:38:13,069 [Thread-5:9744] [blog.views:195] [views:category] [ERROR]- 'Category' object has no attribute 'filter'
+2017-04-27 16:39:07,321 [Thread-3:9372] [blog.views:195] [views:category] [ERROR]- Cannot resolve keyword 'Article_display' into field. Choices are: article, id, index, name
+2017-04-27 16:39:08,134 [Thread-4:6856] [blog.views:195] [views:category] [ERROR]- Cannot resolve keyword 'Article_display' into field. Choices are: article, id, index, name

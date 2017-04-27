@@ -131,11 +131,10 @@ AUTH_USER_MODEL = 'blog.User'
 # 网站的基本信息配置
 SITE_URL = 'http://localhost:8000/'
 SITE_NAME = '的个人博客'
-# SITE_DESC = '专注Linux开发，欢迎和大家交流'
 WEIBO_SINA = 'http://weibo.sina.com/yopoing'
 WEIBO_TENCENT = 'http://weibo.qq.com/yopoing'
-PRO_RSS = 'http://ww2w.baidu.com'
-PRO_EMAIL = 'yopoing@vip.qq.com'
+PRO_RSS = 'http://www.baidu.com'
+PRO_EMAIL = '1785058042@qq.com'
 
 # 自定义日志输出信息
 LOGGING = {

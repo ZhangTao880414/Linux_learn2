@@ -3,9 +3,15 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>{{ request.user.username }}{{ SITE_NAME }}</title>
-<meta name="keywords" content="{{ request.user.username }}{{ SITE_NAME }}" />
-<meta name="description" content="{{ request.user.desc }}" />
+{% if  request.user.username %}
+     <title>{{ request.user.username }}{{ SITE_NAME }}</title>
+     <meta name="keywords" content="{{ request.user.username }}{{ SITE_NAME }}" />
+     <meta name="description" content="{{ request.user.desc }}" />
+ {% else %}
+     <title>Linux学堂</title>
+     <meta name="keywords" content="Linux学堂" />
+     <meta name="description" content="Linux学堂" />
+{% endif %}
 <link href="{% static 'css/base.css' %}" rel="stylesheet">
 <link href="{% static 'css/index.css' %}" rel="stylesheet">
 {% block custom_css %}{% endblock %}
@@ -17,14 +23,19 @@
 {% block custom_js %}{% endblock %}
 </head>
 <body>
-<header>
+<header >
   <div class="logo">
-      <h1>{{ request.user.username }}{{ SITE_NAME }}</h1>
-      <p>{{ request.user.desc }}</p>
+      {% if  request.user.username %}
+          <h1>{{ request.user.username }}{{ SITE_NAME }}</h1>
+          <p>{{ request.user.desc }}</p>
+      {% else %}
+          <h1>欢迎来到Linux学堂</h1>
+          <p>————赶快注册，拥有自己的博客吧！</p>
+      {% endif %}
   </div>
   <nav id="topnav" class="f_r">
     <ul>
-      <a href="/">首页</a>
+      <a href="/blog">首页</a>
       {% for category in category_list %}
       <a href="{% url 'category' %}?cid={{ category.id }}">{{ category.name }}</a>
       {% endfor %}
@@ -42,10 +53,10 @@
       <h3>关注我</h3>
       <div class="gzwm">
         <ul>
-          <li><a class="xlwb" href="#" target="_blank">新浪微博</a></li>
-          <li><a class="txwb" href="#" target="_blank">腾讯微博</a></li>
-          <li><a class="rss" href="portal.php?mod=rss" target="_blank">RSS</a></li>
-          <li><a class="wx" href="mailto:admin@admin.com">邮箱</a></li>
+          <li><a class="xlwb" href="{{ WEIBO_SINA }}" >新浪微博</a></li>
+          <li><a class="txwb" href="{{ WEIBO_TENCENT }}" >腾讯微博</a></li>
+          <li><a class="rss" href="portal.php?mod=rss" >RSS</a></li>
+          <li><a class="wx" href="mailto:admin@admin.com" >邮箱</a></li>
         </ul>
       </div>
     </div>
@@ -72,9 +83,9 @@ window.onload = function ()
 </script>
       <div class="ms-top">
         <ul class="hd" id="tab">
-          <li class="cur"><a href="/">浏览排行</a></li>
-          <li><a href="/">评论排行</a></li>
-          <li><a href="/">站长推荐</a></li>
+          <li class="cur"><a >浏览排行</a></li>
+          <li><a >评论排行</a></li>
+          <li><a >站长推荐</a></li>
         </ul>
       </div>
       <div class="ms-main" id="ms-main">
@@ -137,8 +148,9 @@ window.onload = function ()
   <!--r_box end -->
 </article>
 <footer>
-  <p class="ft-copyright">{{  request.user.username }}的个人博客 蜀ICP备xxxxxxx号-1</p>
-  <div id="tbox"> <a id="gotop" href="javascript:void(0)"></a> </div>
+{#  <p class="ft-copyright">{{  request.user.username }}的个人博客 蜀ICP备xxxxxxx号-1</p>#}
+  <p class="ft-copyright">蜀ICP备xxxxxxx号-1</p>
+{#  <div id="tbox"> <a id="gotop" href="javascript:void(0)"></a> </div>#}
 </footer>
 </body>
 </html>
