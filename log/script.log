@@ -4424,3 +4424,11 @@ Traceback (most recent call last):
   File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
     raise errorclass, errorvalue
 OperationalError: (1271, "Illegal mix of collations for operation 'like'")
+2017-04-28 06:53:02,190 [Thread-13:6544] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-28 07:32:08,125 [Thread-3:5360] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-28 07:55:35,128 [Thread-72:9576] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-28 07:55:35,903 [Thread-74:6332] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-28 07:55:36,954 [Thread-76:9792] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-28 07:58:21,174 [Thread-97:9324] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-28 07:58:23,361 [Thread-99:7604] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-28 07:58:25,503 [Thread-101:9348] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/

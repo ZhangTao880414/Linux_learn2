@@ -13,7 +13,7 @@
 
 <!--网站中间内容开始-->
  <nav class="navbar-inverse">
- <div class="container-fluid">
+ <div class="container">
         <div class="row">
             <div class="span2 col-md-2">
                 <ul class="nav nav-pills nav-stacked" style="">
@@ -31,6 +31,7 @@
                 {% autoescape off %}
                  <video width="720" height="520" controls="controls">
                     <source src="uploads/{{ Chapter_name.Video_chapter_video }}" type="video/mp4">
+{#                    <source src="uploads/{{ Chapter_name.Video_chapter_video }}" type="video/avi">#}
                  </video>
                 {% endautoescape %}
                 <div>
