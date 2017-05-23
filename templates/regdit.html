@@ -1,5 +1,4 @@
 {% load staticfiles %}
-<!DOCTYPE html>
 <html>
 <head>
 		<meta charset="utf-8">
@@ -28,10 +27,10 @@
 						{{ reg_form.email }}
 						<div class="clear"> </div>
 					</li> 
-					<li>
-						{{ reg_form.url }}
-						<div class="clear"> </div>
-					</li> 
+{#					<li>#}
+{#						{{ reg_form.url }}#}
+{#						<div class="clear"> </div>#}
+{#					</li>#}
 
                     <input type="hidden" name="source_url" value="{{ request.META.HTTP_REFERER }}">
 					<input type="submit" value="创建账户并登陆">

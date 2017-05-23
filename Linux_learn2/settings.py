@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'Linux_learn2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'blog',
+        'NAME': 'blognew',
         'USER': 'root',
         'PASSWORD': 'Zt880414',
         'HOST': '',

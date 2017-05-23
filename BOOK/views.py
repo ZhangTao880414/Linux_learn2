@@ -36,6 +36,7 @@ def get_book(request):
         # 通过书籍id找到书籍第一页
         if Chapter_id is None:
             Chapter_id = Chapter_Article.objects.get(Chapter_book_id=book_id, Chapter_level=1).id
+            print Chapter_id
         try:
             book_name = book_info.objects.get(pk=book_id)
             Chapter_name = Chapter_Article.objects.get(pk=Chapter_id)

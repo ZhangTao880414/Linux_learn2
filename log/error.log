@@ -18,3 +18,21 @@
 2017-04-27 16:38:13,069 [Thread-5:9744] [blog.views:195] [views:category] [ERROR]- 'Category' object has no attribute 'filter'
 2017-04-27 16:39:07,321 [Thread-3:9372] [blog.views:195] [views:category] [ERROR]- Cannot resolve keyword 'Article_display' into field. Choices are: article, id, index, name
 2017-04-27 16:39:08,134 [Thread-4:6856] [blog.views:195] [views:category] [ERROR]- Cannot resolve keyword 'Article_display' into field. Choices are: article, id, index, name
+2017-05-10 17:04:45,700 [Thread-22:5796] [blog.views:48] [views:index] [ERROR]- (1054, "Unknown column 'blog_article.Article_display' in 'where clause'")
+2017-05-10 17:07:15,132 [Thread-26:6384] [blog.views:48] [views:index] [ERROR]- (1054, "Unknown column 'blog_article.Article_display' in 'where clause'")
+2017-05-10 17:08:24,767 [Thread-41:4800] [blog.views:48] [views:index] [ERROR]- (1054, "Unknown column 'blog_article.Article_display' in 'where clause'")
+2017-05-10 17:08:42,605 [Thread-44:4664] [blog.views:48] [views:index] [ERROR]- (1054, "Unknown column 'blog_article.Article_display' in 'where clause'")
+2017-05-10 17:08:46,088 [Thread-45:216] [blog.views:48] [views:index] [ERROR]- (1054, "Unknown column 'blog_article.Article_display' in 'where clause'")
+2017-05-10 17:12:24,993 [Thread-3:5620] [blog.views:48] [views:index] [ERROR]- (1054, "Unknown column 'blog_article.Article_display' in 'where clause'")
+2017-05-10 17:14:05,721 [Thread-9:2468] [blog.views:48] [views:index] [ERROR]- (1054, "Unknown column 'blog_article.Article_display' in 'where clause'")
+2017-05-11 01:42:39,630 [Thread-3:19320] [blog.views:156] [views:do_reg] [ERROR]- 'url'
+2017-05-11 01:43:03,154 [Thread-4:20272] [blog.views:156] [views:do_reg] [ERROR]- 'url'
+2017-05-11 01:43:22,292 [Thread-5:20392] [blog.views:156] [views:do_reg] [ERROR]- 'url'
+2017-05-11 01:46:23,030 [Thread-3:19080] [blog.views:156] [views:do_reg] [ERROR]- (1062, "Duplicate entry 'admin2' for key 'username'")
+2017-05-11 01:46:45,135 [Thread-4:19556] [blog.views:156] [views:do_reg] [ERROR]- (1062, "Duplicate entry 'admin2' for key 'username'")
+2017-05-11 01:48:52,566 [Thread-9:19996] [blog.views:156] [views:do_reg] [ERROR]- (1062, "Duplicate entry 'admin2' for key 'username'")
+2017-05-11 01:48:59,124 [Thread-10:19028] [blog.views:156] [views:do_reg] [ERROR]- (1062, "Duplicate entry 'admin2' for key 'username'")
+2017-05-11 01:49:02,720 [Thread-11:18124] [blog.views:156] [views:do_reg] [ERROR]- (1062, "Duplicate entry 'admin2' for key 'username'")
+2017-05-11 01:49:50,436 [Thread-18:20592] [blog.views:156] [views:do_reg] [ERROR]- (1062, "Duplicate entry 'admin2' for key 'username'")
+2017-05-11 01:50:04,967 [Thread-19:20628] [blog.views:156] [views:do_reg] [ERROR]- (1062, "Duplicate entry 'admin2' for key 'username'")
+2017-05-11 01:54:56,252 [Thread-5:20672] [blog.views:156] [views:do_reg] [ERROR]- argument of type 'NoneType' is not iterable

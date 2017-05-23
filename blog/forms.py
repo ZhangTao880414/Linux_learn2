@@ -22,8 +22,8 @@ class RegForm(forms.Form):
                               max_length=50,error_messages={"required": "用户名不能为空",})
     email = forms.EmailField(widget=forms.TextInput(attrs={"placeholder": "Email邮箱", "required": "required",}),
                               max_length=50, error_messages={"required": "Email邮箱不能为空",})
-    url = forms.URLField(widget=forms.TextInput(attrs={"placeholder": "个人网页Url链接", }),
-                              max_length=100, required=False)
+    # url = forms.URLField(widget=forms.TextInput(attrs={"placeholder": "个人网页Url链接", }),
+    #                           max_length=100, required=False)
     password = forms.CharField(widget=forms.PasswordInput(attrs={"placeholder": "密码", "required": "required",}),
                               max_length=50, error_messages={"required": "密码不能为空",})
 

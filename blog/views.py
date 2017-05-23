@@ -140,7 +140,7 @@ def do_reg(request):
                 # 注册
                 user = User.objects.create(username=reg_form.cleaned_data["username"],
                                     email=reg_form.cleaned_data["email"],
-                                    url=reg_form.cleaned_data["url"],
+                                    # url=reg_form.cleaned_data["url"],
                                     password=make_password(reg_form.cleaned_data["password"]),)
                 user.save()
 

@@ -15,17 +15,17 @@
 				<div class="carousel-inner" >
                     {% for ad in Ad_list0 %}
 					<div class="item">
-						<p style="text-align:center "><a href="{{ ad.callback_url }}" ><img alt="" class="img-responsive" src="/uploads/{{  ad.image_url }}"/></a></p>
+						<p style="text-align:center "><a href="{{ ad.callback_url }}" ><img alt="" style="width: 100%;" class="img-responsive" src="/uploads/{{  ad.image_url }}"/></a></p>
 					</div>
                     {% endfor %}
                  {% for ad in Ad_list1 %}
 					<div class="item active">
-						<p style="text-align:center "><a href="{{ ad.callback_url }}"><img alt="" class="img-responsive" src="/uploads/{{  ad.image_url }}" /></a></p>
+						<p style="text-align:center "><a href="{{ ad.callback_url }}"><img alt="" style="width: 100%;" class="img-responsive" src="/uploads/{{  ad.image_url }}" /></a></p>
 					</div>
                 {% endfor %}
                  {% for ad in Ad_list2 %}
 					<div class="item">
-						<p style="text-align:center "><a href="{{ ad.callback_url }}"><img alt="" class="img-responsive" src="/uploads/{{  ad.image_url }}"/></a></p>
+						<p style="text-align:center "><a href="{{ ad.callback_url }}"><img alt=""  style="width: 100%;" class="img-responsive" src="/uploads/{{  ad.image_url }}"/></a></p>
 					</div>
                 {% endfor %}
 				</div>

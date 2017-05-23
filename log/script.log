@@ -4432,3 +4432,1327 @@ OperationalError: (1271, "Illegal mix of collations for operation 'like'")
 2017-04-28 07:58:21,174 [Thread-97:9324] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
 2017-04-28 07:58:23,361 [Thread-99:7604] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
 2017-04-28 07:58:25,503 [Thread-101:9348] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-28 08:10:10,638 [Thread-9:6340] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-04-28 08:12:05,380 [Thread-43:10716] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-28 08:12:33,980 [Thread-57:9340] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-04-28 08:43:44,184 [Thread-13:1856] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-10 04:46:21,558 [Thread-7:7464] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-10 05:17:03,871 [Thread-7:7144] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 45, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 211, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.videohome_ad' doesn't exist")
+2017-05-10 05:17:04,782 [Thread-2:7120] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-10 05:17:25,631 [Thread-2:4176] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 45, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 211, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.videohome_ad' doesn't exist")
+2017-05-10 05:17:48,342 [Thread-20:6132] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 45, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 211, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.videohome_ad' doesn't exist")
+2017-05-10 05:19:58,101 [Thread-2:3676] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 45, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 211, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.videohome_ad' doesn't exist")
+2017-05-10 05:31:16,280 [Thread-2:2380] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 45, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 211, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.videohome_ad' doesn't exist")
+2017-05-10 17:04:14,599 [Thread-4:4324] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 45, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 211, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.videohome_ad' doesn't exist")
+2017-05-10 17:04:16,270 [Thread-3:6040] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-10 17:04:45,799 [Thread-22:5796] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /blog
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\blog\views.py", line 49, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'blog_article.Article_display' in 'field list'")
+2017-05-10 17:07:15,153 [Thread-26:6384] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /blog
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\blog\views.py", line 49, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'blog_article.Article_display' in 'field list'")
+2017-05-10 17:07:56,960 [Thread-36:5548] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-10 17:08:02,601 [Thread-37:3812] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 45, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 211, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.videohome_ad' doesn't exist")
+2017-05-10 17:08:23,572 [Thread-39:4768] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-10 17:08:24,789 [Thread-41:4800] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /blog
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\blog\views.py", line 49, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'blog_article.Article_display' in 'field list'")
+2017-05-10 17:08:42,624 [Thread-44:4664] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /blog
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\blog\views.py", line 49, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'blog_article.Article_display' in 'field list'")
+2017-05-10 17:08:46,145 [Thread-45:216] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /blog
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\blog\views.py", line 49, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'blog_article.Article_display' in 'field list'")
+2017-05-10 17:10:07,483 [Thread-2:6100] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 45, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 211, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.videohome_ad' doesn't exist")
+2017-05-10 17:10:08,388 [Thread-3:5312] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-10 17:11:43,039 [Thread-4:2472] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 46, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "c:\python27\lib\site-packages\django\template\context.py", line 241, in bind_template
+    updates.update(processor(self.request))
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 9, in video_ad_setting
+    print Ad_list0.image_url
+AttributeError: 'QuerySet' object has no attribute 'image_url'
+2017-05-10 17:11:55,177 [Thread-4:5856] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 46, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 208, in render
+    with context.bind_template(self):
+  File "c:\python27\Lib\contextlib.py", line 17, in __enter__
+    return self.gen.next()
+  File "c:\python27\lib\site-packages\django\template\context.py", line 241, in bind_template
+    updates.update(processor(self.request))
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 9, in video_ad_setting
+    print Ad_list0.image_url
+AttributeError: 'QuerySet' object has no attribute 'image_url'
+2017-05-10 17:12:25,016 [Thread-3:5620] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /blog
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\blog\views.py", line 49, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'blog_article.Article_display' in 'field list'")
+2017-05-10 17:13:55,015 [Thread-6:4728] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 45, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 211, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.videohome_ad' doesn't exist")
+2017-05-10 17:14:05,736 [Thread-9:2468] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /blog
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\blog\views.py", line 49, in index
+    return render(request, 'index.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'blog_article.Article_display' in 'field list'")
+2017-05-10 17:14:09,244 [Thread-11:2120] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-10 17:16:09,612 [Thread-16:6816] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 45, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 211, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.videohome_ad' doesn't exist")
+2017-05-10 17:43:49,619 [Thread-2:9804] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 45, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 211, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.videohome_ad' doesn't exist")
+2017-05-10 17:43:50,780 [Thread-3:3916] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-10 17:45:05,744 [Thread-6:5724] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\workspaces\Linux_learn2\VideoHome\views.py", line 45, in videohome
+    return render(request, 'videohome.html', locals())
+  File "c:\python27\lib\site-packages\django\shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "c:\python27\lib\site-packages\django\template\loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "c:\python27\lib\site-packages\django\template\backends\django.py", line 74, in render
+    return self.template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 209, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return template.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 211, in render
+    return self._render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 201, in _render
+    return self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\loader_tags.py", line 56, in render
+    result = self.nodelist.render(context)
+  File "c:\python27\lib\site-packages\django\template\base.py", line 903, in render
+    bit = self.render_node(node, context)
+  File "c:\python27\lib\site-packages\django\template\debug.py", line 79, in render_node
+    return node.render(context)
+  File "c:\python27\lib\site-packages\django\template\defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 144, in __len__
+    self._fetch_all()
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "c:\python27\lib\site-packages\django\db\models\query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "c:\python27\lib\site-packages\django\db\models\sql\compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "c:\python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "c:\python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "c:\python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "c:\python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1146, "Table 'blog.videohome_ad' doesn't exist")
+2017-05-10 17:45:06,727 [Thread-5:9012] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-10 23:03:29,066 [Thread-3:16232] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-11 00:59:55,032 [Thread-3:18656] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-11 00:59:59,871 [Thread-5:18664] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:00:01,996 [Thread-7:18844] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:00:02,875 [Thread-9:18856] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:00:03,710 [Thread-11:18864] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:00:04,375 [Thread-13:18872] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:00:55,759 [Thread-23:19236] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:01:02,365 [Thread-25:19280] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:09:21,145 [Thread-162:17116] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/video_chapter/default.mp4
+2017-05-11 01:17:00,303 [Thread-12:20404] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/video_chapter/default.mp4
+2017-05-11 01:17:01,516 [Thread-13:20432] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:17:02,655 [Thread-15:20440] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:17:03,983 [Thread-17:20456] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:17:05,025 [Thread-19:20464] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:17:05,914 [Thread-21:20472] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/video_chapter/default.mp4
+2017-05-11 01:23:06,815 [Thread-68:13576] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/video_chapter/default.mp4
+2017-05-11 01:25:04,331 [Thread-86:18924] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/video_chapter/default.mp4
+2017-05-11 01:25:05,275 [Thread-89:20332] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:25:05,811 [Thread-91:20200] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:25:06,420 [Thread-93:6424] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:25:06,885 [Thread-95:19804] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:31:42,513 [Thread-30:3392] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/video_chapter/default.mp4
+2017-05-11 01:32:02,739 [Thread-38:20028] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:32:06,283 [Thread-40:20052] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:32:35,655 [Thread-47:17604] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/video_chapter/default.mp4
+2017-05-11 01:35:02,315 [Thread-66:19548] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:35:04,115 [Thread-68:19740] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:35:37,203 [Thread-74:20444] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:37:30,151 [Thread-103:16888] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-11 01:38:19,437 [Thread-122:19928] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.baidu.com
+2017-05-12 23:27:54,598 [Thread-11:12928] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-20 02:33:03,798 [Thread-11:9896] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-20 03:05:25,765 [Thread-35:6860] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-20 03:05:27,709 [Thread-39:15328] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-20 03:05:28,240 [Thread-41:14152] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-20 03:05:28,937 [Thread-43:14704] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-20 03:05:29,451 [Thread-45:14824] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-20 03:07:00,997 [Thread-55:14192] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-20 03:07:49,969 [Thread-75:15068] [django.request:170] [base:get_response] [WARNING]- Not Found: /portal.php
+2017-05-24 04:05:48,358 [Thread-11:2120] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-24 04:06:09,437 [Thread-35:3616] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-24 04:06:11,825 [Thread-36:4452] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-24 04:06:12,348 [Thread-39:9336] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-24 04:16:47,155 [Thread-13:9032] [django.request:98] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /bloglogin
+2017-05-24 04:52:12,388 [Thread-11:15708] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-24 05:58:30,059 [Thread-171:19420] [django.request:170] [base:get_response] [WARNING]- Not Found: /uploads/
+2017-05-24 05:58:48,502 [Thread-173:17636] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.taotaolinux.com
+2017-05-24 05:58:52,470 [Thread-174:17572] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.taotaolinux.com
+2017-05-24 05:59:32,084 [Thread-176:18324] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.taotaolinux.com
+2017-05-24 05:59:38,049 [Thread-177:17888] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.taotaolinux.com
+2017-05-24 06:00:04,349 [Thread-179:19356] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.taotaolinux.com
+2017-05-24 06:01:28,974 [Thread-184:19688] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.taotaolinux.com
+2017-05-24 06:04:11,000 [Thread-195:5548] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.taotaolinux.com
+2017-05-24 06:04:19,069 [Thread-196:19612] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.taotaolinux.com
+2017-05-24 06:04:36,904 [Thread-205:19708] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.taotaolinux.com
+2017-05-24 06:05:47,048 [Thread-207:19284] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.taotaolinux.com
+2017-05-24 06:12:23,618 [Thread-241:20816] [django.request:170] [base:get_response] [WARNING]- Not Found: /www.taotaolinux.com

@@ -27,9 +27,9 @@ class ArticleAdmin(admin.ModelAdmin):
         )
 
 class UserAdmin(admin.ModelAdmin):
-    list_display = ('username', 'qq', 'mobile', 'url', 'desc',)
+    list_display = ('username', 'qq', 'mobile', 'url', 'is_staff', 'is_active')
     list_display_links = ('username', )
-    list_editable = ('qq', 'mobile', 'url', 'desc',)
+    list_editable = ('is_staff', 'is_active')
 
     fieldsets = (
         (None, {
